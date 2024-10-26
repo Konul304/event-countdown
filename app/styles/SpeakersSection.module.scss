@@ -1,0 +1,61 @@
+@import "./mixins";
+
+.speakers_container {
+    @include flex-center;
+    flex-direction: column;
+    margin-bottom: 64px;
+
+    .speakers_header {
+        font-family: Gotham;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48px;
+        color: rgba(48, 48, 48, 1);
+        margin-bottom: 78px
+    }
+
+    .speakers {
+        @include flex-center;
+        flex-wrap: wrap;
+        width: 95%;
+        column-gap: 37.45px;
+        row-gap: 39.99px;
+        .speaker {
+            @include flex-center;
+            flex-direction: column;
+
+            .image {
+                width: 126px;
+                height: 126px;
+                border-radius: 50%;
+                border: 6px solid rgba(48, 70, 115, 0.2);
+                .img{
+                    border-radius: 50%;
+                }
+            }
+
+            .name {
+                margin-top: 16px;
+                font-family: Inter, sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21.78px;
+                text-align: center;
+                color: rgba(48, 70, 115, 1);
+
+            }
+
+            .position {
+                width: 280px;
+                height: 50px;
+                font-family: Gotham Thin;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.4px;
+                text-align: center;
+                color: rgba(48, 70, 115, 0.4);
+                margin-top: 12px;
+            }
+        }
+    }
+}
