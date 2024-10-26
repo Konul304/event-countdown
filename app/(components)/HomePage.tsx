@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import CountdownTimer from './Countdown'
 import styles from "../styles/HomePage.module.scss"
-import { adb, adb_institute, calendar_icon, carec_logo, gerb, gradient_bg, location_icon } from "../images/icons"
+import { adb, adb_institute, carec_logo, gerb, gradient_bg} from "../images/icons"
 import ContentSection from './ContentSection';
 import AgendaSection from './AgendaSection';
 import SpeakersSection from './SpeakersSection';
