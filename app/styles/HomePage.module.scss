@@ -4,6 +4,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
+
     button {
         width: 330px;
         height: 53px;
@@ -102,12 +103,9 @@
         align-items: center;
         padding-top: 122px;
         background:
-            // linear-gradient(to top,
-            //     rgba(255, 255, 255, 0.3),
-            //     /* Adjusted to a lighter color */
-            //     rgba(255, 255, 255, 0.0)
-            //     /* Transparent at the top */
-            // ),
+            linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.02) 60%,
+                rgba(255, 255, 255, 0.5)) 40%,
             url("../images/cover.jpg");
         background-position: center center;
         background-size: cover;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../styles/ContentSection.module.scss";
-import { calendar_icon, location_icon } from '../images/icons';
+import { calendar_icon, location_icon, onsite } from '../images/icons';
 
 const ContentSection = () => {
     return (
@@ -36,15 +36,15 @@ const ContentSection = () => {
 
             </div>
             <div className={styles.content_footer}>
-                <div className={styles.top}><span style={{ marginRight: '26px' }}>&#8226;</span>Hybrid: Baku and online</div>
+                <div className={styles.top}><span style={{ marginRight: '14.87px' }}>{onsite}</span>Hybrid: Baku and online</div>
                 <div className={styles.bottom}>
                     <div style={{ display: 'flex', gap: '16.85px', alignItems: 'center' }}>
                         <div >{location_icon}</div>
-                        <div>47 Gurban Khalilov str. <br />Baku, Azerbaijan, CAERC</div>
+                        <div style={{lineHeight:'28px'}}>47 Gurban Khalilov str. <br />Baku, Azerbaijan, CAERC</div>
                     </div>
                     <div style={{ display: 'flex', gap: '16.85px', alignItems: 'center' }}>
                         <div>{calendar_icon}</div>
-                        <div>November 16, 2024 <br />09:30 a.m.</div>
+                        <div style={{lineHeight:'28px'}}>November 16, 2024 <br />09:30 a.m.</div>
                     </div>
                 </div>
             </div>

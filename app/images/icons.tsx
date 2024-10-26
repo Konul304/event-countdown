@@ -239,5 +239,13 @@ const calendar_icon = (
 
 );
 
+const onsite = (
 
-export { carec_logo, gerb, adb_institute, adb, gradient_bg, location_icon, calendar_icon };
+<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.7143 4.36006L13.3151 19.1656C12.2095 21.3768 9.05407 21.3768 7.9485 19.1656L0.549228 4.36006C-0.448124 2.36535 1.00237 0.0184174 3.23251 0.0184174H18.0311C20.2612 0.0184174 21.7117 2.36536 20.7143 4.36006Z" fill="#F9F9F9"/>
+</svg>
+
+);
+
+
+export { carec_logo, gerb, adb_institute, adb, gradient_bg, location_icon, calendar_icon ,onsite};
