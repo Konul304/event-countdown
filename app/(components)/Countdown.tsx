@@ -41,19 +41,19 @@ const CountdownTimer = () => {
             <div className={styles.countdown_container}>
                 <div className={styles.item}>
                     <div>{days}</div>
-                    <p>gün</p>
+                    <p>Day</p>
                 </div>
                 <div className={styles.item}>
                     <div>{hours}</div>
-                    <p>saat</p>
+                    <p>Hour</p>
                 </div>
                 <div className={styles.item}>
                     <div>{minutes}</div>
-                    <p>dəqiqə</p>
+                    <p>Minute</p>
                 </div>
                 <div className={styles.item}>
                     <div>{seconds}</div>
-                    <p>saniyə</p>
+                    <p>Second</p>
                 </div>
             </div>
         </div>
