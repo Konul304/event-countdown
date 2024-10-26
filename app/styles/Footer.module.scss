@@ -1,0 +1,25 @@
+.footer_container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 136px;
+    background-color: rgba(48, 70, 115, 1);
+    font-family: Gotham Thin;
+    font-weight: 400;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48.9px 100.38px;
+
+    .organization {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .address {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+}

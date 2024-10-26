@@ -7,3 +7,21 @@
 html {
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: Gotham;
+  src: url("./fonts/Gotham-font-family/Gotham/Gotham-Medium.otf");
+  weight: 500;
+}
+
+@font-face {
+  font-family: Gotham Thin;
+  src: url("./fonts/Gotham-font-family/Gotham/Gotham-Thin.otf");
+  weight: 500;
+}
+
+@font-face {
+  font-family: Gotham Bold;
+  src: url("./fonts/Gotham-font-family/Gotham/Gotham-Black.otf");
+  weight: 900;
+}

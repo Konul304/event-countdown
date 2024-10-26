@@ -1,0 +1,171 @@
+@import "./mixins";
+
+.agenda_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 53%;
+
+    .agenda_header_bg {
+        width: 935px;
+        height: 307.89px;
+        margin-top: 200px;
+        background: linear-gradient(to right,
+                rgba(93, 166, 206, 1),
+                rgba(24, 57, 108, 1));
+        padding: 0 81.19px;
+        border-radius: 20px;
+
+        .title {
+            font-family: Gotham Bold;
+            font-size: 49.31px;
+            font-weight: 900;
+            line-height: 59.18px;
+            text-align: left;
+            color: #fff;
+        }
+    }
+
+    .top_part {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 57px;
+
+        .name {
+            width: 403.1px;
+            height: 59.96px;
+            background-color: rgba(23, 57, 109, 1);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            font-family: Gotham;
+            font-size: 22.45px;
+            font-weight: 900;
+            line-height: 26.94px;
+            color: #ffffff;
+            text-align: center;
+            @include flex-center;
+        }
+
+        .date {
+            font-family: Gotham Thin;
+            font-size: 19.73px;
+            font-weight: 400;
+            line-height: 23.67px;
+            text-align: left;
+            color: #fff;
+        }
+
+    }
+
+    .agenda_content {
+        position: relative;
+        width: 935px;
+        padding-top: 54.34px;
+        padding-bottom: 42.51px;
+        background-color: rgba(249, 249, 249, 1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: -1;
+        top: -16px;
+
+        .agenda_flex {
+            display: flex;
+            gap: 32.28px;
+            width: 91%;
+            margin-bottom: 16px;
+            padding-left: 100px;
+
+            .time {
+                min-width: 135px;
+                text-align: center;
+            }
+
+            .info_header {
+                text-align: left;
+                margin-left: 53px;
+
+                span {
+                    font-family: Gotham Thin;
+                    font-size: 18.84px;
+                    font-weight: 400;
+                    line-height: 22.61px;
+                    text-align: left;
+                    color: rgba(35, 31, 32, 1);
+                }
+            }
+
+            .time,
+            .info_header {
+                font-family: Gotham;
+                font-size: 19.67px;
+                font-weight: 700;
+                line-height: 23.61px;
+                color: rgba(0, 97, 107, 1);
+            }
+
+            .info_content {
+                display: flex;
+                gap: 16.7px;
+                margin-top: 8.46px;
+                font-family: Gotham Thin;
+                font-size: 19.73px;
+                font-weight: 400;
+                line-height: 23.67px;
+                text-align: left;
+                color: rgba(35, 31, 32, 1);
+
+                .image {
+                    border: 1.76px solid rgba(48, 70, 115, 0.2);
+                    border-radius: 50%;
+                }
+            }
+
+        }
+
+        // hr {
+        //     position: absolute;
+        //     width: 815.64px;
+        //     left: -15px;
+        //     height: 1px;
+        //     background-color: rgba(0, 97, 107, 1);
+        // }
+
+        .content_footer {
+            width: 823.3px;
+            height: 135.8px;
+            position: relative;
+            color: rgba(254, 254, 254, 1);
+            text-align: center;
+            font-family: Gotham;
+            font-size: 18.84px;
+            font-weight: 700;
+            line-height: 22.61px;
+            text-align: center;
+            margin: 24.15px auto 18px;
+
+            .top {
+                @include flex-center;
+                padding: 20px 45px;
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 50px;
+                background-color: rgba(1, 163, 152, 1);
+                border-radius: 10px;
+
+            }
+
+            .bottom {
+                @include flex-center;
+                gap: 200px;
+                height: 100%;
+                background-color: rgba(0, 104, 113, 1);
+                border-radius: 10px;
+                padding: 44px 27px 4px;
+            }
+        }
+    }
+}

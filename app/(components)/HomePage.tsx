@@ -2,6 +2,11 @@
 import React, { useEffect, useState } from 'react'
 import CountdownTimer from './Countdown'
 import styles from "../styles/HomePage.module.scss"
+import { adb, adb_institute, calendar_icon, carec_logo, gerb, gradient_bg, location_icon } from "../images/icons"
+import ContentSection from './ContentSection';
+import AgendaSection from './AgendaSection';
+import SpeakersSection from './SpeakersSection';
+import Footer from './Footer';
 
 const HomePage = () => {
     const [activeSection, setActiveSection] = useState('section1');
@@ -27,8 +32,11 @@ const HomePage = () => {
 
         const section1 = document.getElementById('section1');
         const section2 = document.getElementById('section2');
-        if (section1 && section2) {
-            if (scrollY >= section2.offsetTop - 100) {
+        const section3 = document.getElementById('section3');
+        if (section1 && section2 && section3) {
+            if (scrollY >= section3.offsetTop - 100) {
+                setActiveSection('section3');
+            } else if (scrollY >= section2.offsetTop - 100) {
                 setActiveSection('section2');
             } else if (scrollY >= section1.offsetTop - 100) {
                 setActiveSection('section1');
@@ -43,37 +51,72 @@ const HomePage = () => {
         };
     }, []);
     return (
-        <div className={styles.homepage_container}>
-            <nav className={`${styles.navbar} ${navbarSolid ? styles.navbar_solid : ''}`}>
-                <ul>
-                    <li
-                        className={activeSection === 'section1' ? styles.active : ''}
-                        onClick={() => handleNavClick('section1')}
-                    >
-                        Təlim haqqında
-                    </li>
-                    <li
-                        className={activeSection === 'section2' ? styles.active : ''}
-                        onClick={() => handleNavClick('section2')}
-                    >
-                        Qeydiyyat
-                    </li>
-                </ul>
-            </nav>
-            <div className={styles.info_container}>
-                <p className={styles.title}>16 NOYABR </p>
-                <CountdownTimer />
+        <>
+            <head>
+                <link
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+                />
+            </head>
+            <div className={styles.homepage_container}>
+                <nav className={`${styles.navbar} ${navbarSolid ? styles.navbar_solid : ''}`}>
+                    <ul>
+                        <li
+                            className={activeSection === 'section1' ? styles.active : ''}
+                            onClick={() => handleNavClick('section1')}
+                        >
+                            About training
+                        </li>
+                        <li
+                            className={activeSection === 'section2' ? styles.active : ''}
+                            onClick={() => handleNavClick('section2')}
+                        >
+                            Agenda
+                        </li>
+                        <li
+                            className={activeSection === 'section3' ? styles.active : ''}
+                            onClick={() => handleNavClick('section3')}
+                        >
+                            Speakers
+                        </li>
+                    </ul>
+                </nav>
+                <div className={styles.info_container}>
+                    <div className={styles.bg_gradient}>{gradient_bg}</div>
+                    <CountdownTimer />
+                    <p className={styles.date}>16 November 2024 o’clock 10:00 AM</p>
+                    <p className={styles.title}>Global Green Economy</p>
+                    <p className={styles.description}>Financing, Innovation, and Climate Action</p>
+                    <button>Register</button>
+                    <div className={styles.companies} id="section1">
+                        <div className={styles.logo1}>{adb_institute}</div>
+                        <div className={styles.logo2}>{adb}</div>
+                        <div className={styles.logo3}>{carec_logo}</div>
+                        <div className={styles.logo4} style={{ display: 'flex', gap: '10.13px', alignItems: 'center' }}>
+                            {gerb}
+                            <div className={styles.center_name}>
+                                İQTİSADİ İSLAHATLARIN TƏHLİLİ VƏ
+                                KOMMUNİKASİYA MƏRKƏZİNİN MONİTORİNQ
+                                VƏ QİYMƏTLƏNDİRMƏ ÜZRƏ PORTALI
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div  className={styles.section1}>
+                    <ContentSection />
+                </div>
+                <div  className={styles.section2}>
+                    <AgendaSection />
+                </div>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '68px' }}>
+                    <button>Register</button>
+                </div>
+                <div id="section3" className={styles.section3}>
+                    <SpeakersSection />
+                    <Footer />
+                </div>
             </div>
-            <div id="section1" className={styles.other_section}>
-                <h2>Section 1 Content</h2>
-                <p>Some other content for this section.</p>
-            </div>
-
-            <div id="section2" className={styles.other_section}>
-                <h2>Section 2 Content</h2>
-                <p>Some other content for this section.</p>
-            </div>
-        </div>
+        </>
     )
 }
 
