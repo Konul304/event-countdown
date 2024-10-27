@@ -25,3 +25,76 @@ html {
   src: url("./fonts/Gotham-font-family/Gotham/Gotham-Black.otf");
   weight: 900;
 }
+
+.ant-modal .ant-modal-content {
+  height: 803px !important;
+  border-radius: 32px !important;
+  /* margin-top: -90px !important; */
+}
+
+.ant-input-outlined {
+  width: 478px !important;
+  height: 56px !important;
+  border-radius: 12px !important;
+  font-family: Gotham Thin !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 19.2px !important;
+  text-align: left !important;
+  color: rgba(48, 70, 115, 1) !important;
+  padding-left: 24.31px !important;
+}
+
+.ant-form-item-label>label {
+  font-family: Gotham Thin !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 19.2px !important;
+  text-align: left !important;
+  color: rgba(102, 102, 102, 1) !important;
+}
+
+.ant-checkbox+span {
+  width: 478px !important;
+  padding-inline-end: 0px !important;
+  font-family: Poppins !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  text-align: left !important;
+  color: rgba(17, 17, 17, 1) !important;
+}
+
+.ant-col-offset-6 {
+  margin-inline-start: 0px !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: rgba(48, 70, 115, 1) !important;
+  border-color: rgba(48, 70, 115, 1) !important;
+}
+
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  border-color: rgba(48, 70, 115, 1) !important;
+}
+
+:where(.css-dev-only-do-not-override-ni1kz0).ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+:where(.css-dev-only-do-not-override-ni1kz0).ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+  border-color: rgba(48, 70, 115, 1) !important;
+}
+
+.ant-input-outlined:hover {
+  border-color: rgba(48, 70, 115, 1) !important;
+}
+
+.ant-input-outlined:focus-within {
+  border-color: rgba(48, 70, 115, 1) !important;
+}
+
+.ant-input-outlined:focus {
+  border-color: rgba(48, 70, 115, 1) !important;
+}
+
+.ant-input-outlined:focus-visible {
+  border-color: rgba(48, 70, 115, 1) !important;
+}
