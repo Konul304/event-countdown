@@ -1,22 +1,32 @@
 "use client";
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import CountdownTimer from './Countdown'
 import styles from "../styles/HomePage.module.scss"
-import { adb, adb_institute, carec_logo, gerb, gradient_bg} from "../images/icons"
+import { adb, adb_institute, carec_logo, gerb, gradient_bg } from "../images/icons"
 import ContentSection from './ContentSection';
 import AgendaSection from './AgendaSection';
 import SpeakersSection from './SpeakersSection';
 import Footer from './Footer';
+import Head from 'next/head';
 
 const HomePage = () => {
     const [activeSection, setActiveSection] = useState('section1');
     const [navbarSolid, setNavbarSolid] = useState(false);
 
-    const handleNavClick = (section: string) => {
+    const section1Ref = useRef<HTMLDivElement>(null);
+    const section2Ref = useRef<HTMLDivElement>(null);
+    const section3Ref = useRef<HTMLDivElement>(null);
+
+    const handleNavClick = (section: any) => {
         setActiveSection(section);
-        const sectionElement = document.getElementById(section);
-        if (sectionElement) {
-            sectionElement.scrollIntoView({ behavior: 'smooth' });
+
+        // Scroll to the section by calling scrollIntoView on the ref
+        if (section === 'section1' && section1Ref.current) {
+            section1Ref.current.scrollIntoView({ behavior: 'smooth' });
+        } else if (section === 'section2' && section2Ref.current) {
+            section2Ref.current.scrollIntoView({ behavior: 'smooth' });
+        } else if (section === 'section3' && section3Ref.current) {
+            section3Ref.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
@@ -24,23 +34,16 @@ const HomePage = () => {
         const scrollY = window.scrollY;
         const triggerPoint = 100;
 
-        if (scrollY > triggerPoint) {
-            setNavbarSolid(true);
-        } else {
-            setNavbarSolid(false);
-        }
+        // Toggle the solid navbar based on the scroll position
+        setNavbarSolid(scrollY > triggerPoint);
 
-        const section1 = document.getElementById('section1');
-        const section2 = document.getElementById('section2');
-        const section3 = document.getElementById('section3');
-        if (section1 && section2 && section3) {
-            if (scrollY >= section3.offsetTop - 100) {
-                setActiveSection('section3');
-            } else if (scrollY >= section2.offsetTop - 100) {
-                setActiveSection('section2');
-            } else if (scrollY >= section1.offsetTop - 100) {
-                setActiveSection('section1');
-            }
+        // Check the position of each section and update activeSection state accordingly
+        if (section3Ref.current && section3Ref.current.getBoundingClientRect().top <= 100) {
+            setActiveSection('section3');
+        } else if (section2Ref.current && section2Ref.current.getBoundingClientRect().top <= 100) {
+            setActiveSection('section2');
+        } else if (section1Ref.current && section1Ref.current.getBoundingClientRect().top <= 100) {
+            setActiveSection('section1');
         }
     };
 
@@ -50,14 +53,15 @@ const HomePage = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    
     return (
         <>
-            <head>
+            <Head>
                 <link
                     rel="stylesheet"
                     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
                 />
-            </head>
+            </Head>
             <div className={styles.homepage_container}>
                 <nav className={`${styles.navbar} ${navbarSolid ? styles.navbar_solid : ''}`}>
                     <ul>
@@ -88,7 +92,7 @@ const HomePage = () => {
                     <p className={styles.title}>Global Green Economy</p>
                     <p className={styles.description}>Financing, Innovation, and Climate Action</p>
                     <button>Register</button>
-                    <div className={styles.companies} id="section1">
+                    <div className={styles.companies} ref={section1Ref}>
                         <div className={styles.logo1}>{adb_institute}</div>
                         <div className={styles.logo2}>{adb}</div>
                         <div className={styles.logo3}>{carec_logo}</div>
@@ -102,16 +106,16 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div  className={styles.section1}>
+                <div className={styles.section1}>
                     <ContentSection />
                 </div>
-                <div  className={styles.section2}>
-                    <AgendaSection />
+                <div className={styles.section2}>
+                    <AgendaSection refProp={section2Ref} />
                 </div>
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '68px' }}>
                     <button>Register</button>
                 </div>
-                <div id="section3" className={styles.section3}>
+                <div ref={section3Ref} id="section3" className={styles.section3}>
                     <SpeakersSection />
                     <Footer />
                 </div>

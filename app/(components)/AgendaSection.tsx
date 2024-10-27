@@ -3,9 +3,9 @@ import styles from "../styles/AgendaSection.module.scss";
 import a from "../images/image.png";
 import Image from 'next/image';
 
-const AgendaSection = () => {
+const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }) => {
     return (
-        <div id="section2" className={styles.agenda_container} >
+        <div  ref={refProp}  className={styles.agenda_container} >
             <div className={styles.agenda_header_bg}>
                 <div className={styles.top_part}>
                     <div className={styles.name}>Global Think Tanks Forum </div>
