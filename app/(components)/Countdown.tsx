@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/CountDown.module.scss'
 
 const CountdownTimer = () => {
-    // Set the target date to November 12 of the current year
-    const targetDate = new Date(new Date().getFullYear(), 10, 16); // Months are 0-indexed, so November is 10
+    // Set the target date to November 16 at 10:00 AM of the current year
+    const targetDate = new Date(new Date().getFullYear(), 10, 16, 10, 0, 0); // Months are 0-indexed, so November is 10
     const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining(targetDate));
 
     useEffect(() => {
