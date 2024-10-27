@@ -8,10 +8,12 @@ import AgendaSection from './AgendaSection';
 import SpeakersSection from './SpeakersSection';
 import Footer from './Footer';
 import Head from 'next/head';
+import RegisterModal from './RegisterModal';
 
 const HomePage = () => {
     const [activeSection, setActiveSection] = useState('section1');
     const [navbarSolid, setNavbarSolid] = useState(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false)
 
     const section1Ref = useRef<HTMLDivElement>(null);
     const section2Ref = useRef<HTMLDivElement>(null);
@@ -53,7 +55,7 @@ const HomePage = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    
+
     return (
         <>
             <Head>
@@ -91,7 +93,7 @@ const HomePage = () => {
                     <p className={styles.date}>16 November 2024 o’clock 10:00 AM</p>
                     <p className={styles.title}>Global Green Economy</p>
                     <p className={styles.description}>Financing, Innovation, and Climate Action</p>
-                    <button>Register</button>
+                    <button onClick={() => setIsOpen(true)}>Register</button>
                     <div className={styles.companies} ref={section1Ref}>
                         <div className={styles.logo1}>{adb_institute}</div>
                         <div className={styles.logo2}>{adb}</div>
@@ -113,13 +115,14 @@ const HomePage = () => {
                     <AgendaSection refProp={section2Ref} />
                 </div>
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '68px' }}>
-                    <button>Register</button>
+                    <button onClick={() => setIsOpen(true)}>Register</button>
                 </div>
                 <div ref={section3Ref} id="section3" className={styles.section3}>
                     <SpeakersSection />
                     <Footer />
                 </div>
             </div>
+            {isOpen && <RegisterModal isOpen={isOpen} setIsOpen={setIsOpen} />}
         </>
     )
 }
