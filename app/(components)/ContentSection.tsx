@@ -36,7 +36,7 @@ const ContentSection = () => {
 
             </div>
             <div className={styles.content_footer}>
-                <div className={styles.top}><span style={{ marginRight: '14.87px' }}>{onsite}</span>Hybrid: Baku and online</div>
+                <div className={styles.top}><span style={{ marginRight: '20px' }}>{onsite}</span>Hybrid: Baku and online</div>
                 <div className={styles.bottom}>
                     <div style={{ display: 'flex', gap: '16.85px', alignItems: 'center' }}>
                         <div >{location_icon}</div>

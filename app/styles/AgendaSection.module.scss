@@ -8,19 +8,19 @@
 
     .agenda_header_bg {
         width: 935px;
-        height: 307.89px;
-        margin-top: 200px;
+        margin-top: 290px;
         background: linear-gradient(to right,
                 rgba(93, 166, 206, 1),
                 rgba(24, 57, 108, 1));
-        padding: 0 81.19px;
+        padding: 0 81.19px 25px;
         border-radius: 20px;
+        z-index: 2;
 
         .title {
             font-family: Gotham Bold;
-            font-size: 49.31px;
+            font-size: 47.1px;
             font-weight: 900;
-            line-height: 59.18px;
+            line-height: 56.52px;
             text-align: left;
             color: #fff;
         }
@@ -29,12 +29,11 @@
     .top_part {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        margin-bottom: 57px;
+        margin-bottom: 52.22px;
 
         .name {
             width: 403.1px;
-            height: 59.96px;
+            height: 57.28px;
             background-color: rgba(23, 57, 109, 1);
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
@@ -50,6 +49,7 @@
 
         .date {
             font-family: Gotham Thin;
+            margin-top: 32px;
             font-size: 19.73px;
             font-weight: 400;
             line-height: 23.67px;
@@ -68,7 +68,7 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.5);
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        z-index: -1;
+        z-index: 1;
         top: -16px;
 
         .agenda_flex {

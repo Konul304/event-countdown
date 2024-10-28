@@ -36,7 +36,7 @@
 
     .content {
         max-width: 813px;
-        font-family: Inter,sans-serif;
+        font-family: Gotham Book;
         font-size: 20.81px;
         font-weight: 500;
         line-height: 31.21px;
@@ -51,7 +51,7 @@
         color: rgba(254, 254, 254, 1);
 
         .top {
-            padding: 20px 45px;
+            padding: 20px 32px;
             position: absolute;
             top: 0px;
             width: 100%;
@@ -79,6 +79,9 @@
             font-weight: 700;
             line-height: 19.2px;
             text-align: left;
+            svg{
+                height: 100px !important;
+            }
         }
     }
 }
