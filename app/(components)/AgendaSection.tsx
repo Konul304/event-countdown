@@ -25,7 +25,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                         Registration for Onsite Participants Opens
                     </div>
                 </div>
-                {/* <hr /> */}
+                <hr />
                 <div style={{ marginTop: '45px' }} className={styles.agenda_flex}>
                     <div className={styles.time}>
                         9:30 - 9:45<br />(15 min)
@@ -58,7 +58,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>           
                 <div className={styles.content_footer}>
                     <div className={styles.top}>ROUNDTABLE DISCUSSIONS (1)</div>
                     <div className={styles.bottom}>
@@ -104,7 +104,8 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                         </div>
                     </div>
                 </div>
-                <div className={styles.agenda_flex} style={{ marginTop: '37px' }}>
+                <hr />
+                <div className={styles.agenda_flex} style={{ marginTop: '17px' }}>
                     <div className={styles.time}>
                         11:00 - 11:30<br />(30 min)
                     </div>
@@ -125,7 +126,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             Strategies and Innovations</div>
                     </div>
                 </div>
-                <div style={{ marginTop: '45px' }} className={styles.agenda_flex}>
+                <div style={{ marginTop: '45px',marginBottom:'20px' }} className={styles.agenda_flex}>
                     <div className={styles.time}>
                         11:30 - 12:45<br />(75 min)
                     </div>
@@ -179,6 +180,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                         </div>
                     </div>
                 </div>
+                <hr />
                 <div style={{ marginTop: '45px' }} className={styles.agenda_flex}>
                     <div className={styles.time}>
                         12:45 - 13:00<br />(15 min)
@@ -207,7 +209,8 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                         </div>
                     </div>
                 </div>
-                <div className={styles.agenda_flex} style={{ marginTop: '37px' }}>
+                <hr />
+                <div className={styles.agenda_flex} style={{ marginTop: '20px' }}>
                     <div className={styles.time}>
                         13:00 - 15:00
                     </div>
@@ -215,6 +218,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                         Lunch
                     </div>
                 </div>
+                <hr />
                 <div className={styles.agenda_flex} style={{ marginTop: '37px' }}>
                     <div className={styles.time}>
                         19:00
