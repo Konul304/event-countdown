@@ -3,17 +3,25 @@ import styles from "../styles/AgendaSection.module.scss";
 import a from "../images/image.png";
 import Image from 'next/image';
 
-const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }) => {
+const AgendaSection = ({
+    refProp,
+    onImageClick,  // Add the onImageClick prop
+}: {
+    refProp: React.RefObject<HTMLDivElement>;
+    onImageClick: () => void;  // Specify the type for the click handler
+}) => {
     return (
-        <div  ref={refProp}  className={styles.agenda_container} >
+        <div ref={refProp} className={styles.agenda_container} >
             <div className={styles.agenda_header_bg}>
                 <div className={styles.top_part}>
                     <div className={styles.name}>Global Think Tanks Forum </div>
                     <div className={styles.date}>November 16, 2024</div>
                 </div>
                 <div className={styles.title}>
-                    Global Green Economy:<br />
-                    Climate Action, Financing <br />and Innovation
+                    Global Green Economy:
+                    <div style={{ fontFamily: 'Gotham Book' }}>
+                        Climate Action, Financing <br /> and Innovation
+                    </div>
                 </div>
             </div>
             <div className={styles.agenda_content} >
@@ -35,7 +43,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             Opening Remarks
                         </div>
                         <div className={styles.info_content}>
-                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' />
+                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Prof. Dr. VUSAL GASIMLI <br />
                                 Executive Director of the Center for Analysis of Economic
@@ -43,14 +51,14 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' />
+                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. TETSUSHI SONOBE <br />
                                 Dean and CEO of the Asian Development Bank Institute
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' />
+                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 CANDICE McDEIGAN <br />
                                 Head of the Asian Development Bank's Resident Mission
@@ -58,7 +66,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             </div>
                         </div>
                     </div>
-                </div>           
+                </div>
                 <div className={styles.content_footer}>
                     <div className={styles.top}>ROUNDTABLE DISCUSSIONS (1)</div>
                     <div className={styles.bottom}>
@@ -80,7 +88,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             </div>
                         </div>
                         <div className={styles.info_content}>
-                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' />
+                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Prof. Dr. VUSAL GASIMLI <br />
                                 Executive Director of the Center for Analysis of Economic
@@ -88,14 +96,14 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' />
+                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. TETSUSHI SONOBE <br />
                                 Dean and CEO of the Asian Development Bank Institute
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' />
+                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick}  />
                             <div>
                                 CANDICE McDEIGAN <br />
                                 Head of the Asian Development Bank's Resident Mission
@@ -114,7 +122,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                     </div>
                 </div>
             </div>
-            <div className={styles.agenda_content} style={{ marginTop: '72px', borderRadius: '20px', paddingTop: '0px' }}>
+            <div className={styles.agenda_content} style={{ marginTop: '72px', borderRadius: '20px', paddingTop: '0px', paddingBottom: '210px' }}>
                 <div className={styles.top_part} style={{ padding: '0 77.77px' }}>
                     <div className={styles.name}>Global Think Tanks Forum </div>
                     <div className={styles.date} style={{ color: 'rgba(35, 31, 32, 1)' }}>November 16, 2024</div>
@@ -126,7 +134,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             Strategies and Innovations</div>
                     </div>
                 </div>
-                <div style={{ marginTop: '45px',marginBottom:'20px' }} className={styles.agenda_flex}>
+                <div style={{ marginTop: '45px', marginBottom: '20px' }} className={styles.agenda_flex}>
                     <div className={styles.time}>
                         11:30 - 12:45<br />(75 min)
                     </div>
@@ -141,7 +149,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             </div>
                         </div>
                         <div className={styles.info_content}>
-                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' />
+                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Prof. Dr. SIDDHARTH SAXENA <br />
                                 Chairperson of the Cambridge Central Asia Forum of the
@@ -150,21 +158,21 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' />
+                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. GHULAM SAMAD <br />
                                 Head of the Research Division, CAREC Institute
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' />
+                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. JOACHIM MONKELBAAN <br />
                                 Senior Fellow, KAPSARC
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' />
+                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. RASHAD HUSEYNOV<br />
                                 Director of Agrarian Research Center, Ministry of Agriculture
@@ -172,7 +180,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' />
+                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 VUSALA JAFAROVA<br />
                                 Head of the Turkic World Research Center, CAERC (TBC)
@@ -193,7 +201,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
 
                         </div>
                         <div className={styles.info_content}>
-                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' />
+                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Prof. Dr. VUSAL GASIMLI<br />
                                 Executive Director of the Center for Analysis of Economic
@@ -201,7 +209,7 @@ const AgendaSection = ({ refProp }: { refProp: React.RefObject<HTMLDivElement> }
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' />
+                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. TETSUSHI SONOBE<br />
                                 Dean and CEO of the Asian Development Bank Institute

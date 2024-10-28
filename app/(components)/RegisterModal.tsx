@@ -19,6 +19,7 @@ const RegisterModal = ({ isOpen, setIsOpen }: any) => {
                         labelCol={{ span: 8 }}
                         wrapperCol={{ span: 16 }}
                         style={{ maxWidth: 600 }}
+                        validateTrigger="onSubmit"
                         onFinish={onFinish}
                         autoComplete="off"
                         layout='vertical'
@@ -26,28 +27,41 @@ const RegisterModal = ({ isOpen, setIsOpen }: any) => {
                         <Form.Item
                             label="Name"
                             name="name"
+                            rules={[{ required: true, message: 'Please enter your name' }]}
+                            required={false}
                         >
                             <Input />
                         </Form.Item>
                         <Form.Item
                             label="Surname"
                             name="surname"
+                            rules={[{ required: true, message: 'Please enter your surname' }]}
+                            required={false}
                         >
                             <Input />
                         </Form.Item>
                         <Form.Item
                             label="Email"
-                            name="email">
+                            name="email"
+                            rules={[{ required: true, message: 'Please enter your email' }]}
+                            required={false}>
+
                             <Input
-                                suffix={email_icon} />
+                                suffix={email_icon} type='email' />
                         </Form.Item>
                         <Form.Item
                             label="Company"
-                            name="company">
+                            name="company"
+                            rules={[{ required: true, message: 'Please enter your company' }]}
+                            required={false}>
                             <Input
                                 suffix={company_icon} />
                         </Form.Item>
-                        <Form.Item name="terms" valuePropName="checked">
+                        <Form.Item
+                            name="terms"
+                            valuePropName="checked"
+                            rules={[{ required: true, message: 'Please accept our Terms of use and Privacy Policy' }]}
+                            required={false}>
                             <Checkbox>I agree to our Terms of use and Privacy Policy </Checkbox>
                         </Form.Item>
                         <Form.Item wrapperCol={{ offset: 6, span: 16 }}>

@@ -74,16 +74,16 @@ const HomePage = () => {
                             About training
                         </li>
                         <li
-                            className={activeSection === 'section2' ? styles.active : ''}
-                            onClick={() => handleNavClick('section2')}
-                        >
-                            Agenda
-                        </li>
-                        <li
                             className={activeSection === 'section3' ? styles.active : ''}
                             onClick={() => handleNavClick('section3')}
                         >
                             Speakers
+                        </li>
+                        <li
+                            className={activeSection === 'section2' ? styles.active : ''}
+                            onClick={() => handleNavClick('section2')}
+                        >
+                            Agenda
                         </li>
                     </ul>
                 </nav>
@@ -112,7 +112,7 @@ const HomePage = () => {
                     <ContentSection />
                 </div>
                 <div className={styles.section2}>
-                    <AgendaSection refProp={section2Ref} />
+                    <AgendaSection refProp={section2Ref} onImageClick={() => handleNavClick('section3')}  />
                 </div>
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '68px' }}>
                     <button onClick={() => setIsOpen(true)}>Register</button>

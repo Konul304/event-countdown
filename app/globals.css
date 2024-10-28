@@ -26,6 +26,18 @@ html {
   weight: 900;
 }
 
+@font-face {
+  font-family: Gotham Medium;
+  src: url("./fonts/Gotham-font-family/Gotham/Gotham-Medium.otf");
+  weight: 500;
+}
+
+@font-face {
+  font-family: Gotham Book;
+  src: url("./fonts/Gotham-font-family/Gotham/Gotham-Book.otf");
+  weight: 500;
+}
+
 .ant-modal .ant-modal-content {
   height: 803px !important;
   border-radius: 32px !important;
