@@ -110,3 +110,12 @@ html {
 .ant-input-outlined:focus-visible {
   border-color: rgba(48, 70, 115, 1) !important;
 }
+
+.ant-popover .ant-popover-inner-content{
+  width: 400px !important;
+}
+
+.ant-popover{
+  position:  relative !important;
+  z-index: 1 !important;
+}

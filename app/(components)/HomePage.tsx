@@ -9,8 +9,11 @@ import SpeakersSection from './SpeakersSection';
 import Footer from './Footer';
 import Head from 'next/head';
 import RegisterModal from './RegisterModal';
+import { useRouter } from 'next/navigation';
+
 
 const HomePage = () => {
+    const router = useRouter();
     const [activeSection, setActiveSection] = useState('section1');
     const [navbarSolid, setNavbarSolid] = useState(false);
     const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -22,29 +25,40 @@ const HomePage = () => {
     const handleNavClick = (section: any) => {
         setActiveSection(section);
 
-        // Scroll to the section by calling scrollIntoView on the ref
+        let offset = -100; // Adjust this offset as needed
+
+        // Scroll to the section with an offset
         if (section === 'section1' && section1Ref.current) {
-            section1Ref.current.scrollIntoView({ behavior: 'smooth' });
+            window.scrollTo({
+                top: section1Ref.current.offsetTop + offset,
+                behavior: 'smooth'
+            });
         } else if (section === 'section2' && section2Ref.current) {
-            section2Ref.current.scrollIntoView({ behavior: 'smooth' });
+            window.scrollTo({
+                top: section2Ref.current.offsetTop + offset,
+                behavior: 'smooth'
+            });
         } else if (section === 'section3' && section3Ref.current) {
-            section3Ref.current.scrollIntoView({ behavior: 'smooth' });
+            window.scrollTo({
+                top: section3Ref.current.offsetTop + offset,
+                behavior: 'smooth'
+            });
         }
     };
 
     const handleScroll = () => {
         const scrollY = window.scrollY;
-        const triggerPoint = 100;
+        const triggerPoint = 150; // Increase this if needed
 
         // Toggle the solid navbar based on the scroll position
         setNavbarSolid(scrollY > triggerPoint);
 
-        // Check the position of each section and update activeSection state accordingly
-        if (section3Ref.current && section3Ref.current.getBoundingClientRect().top <= 100) {
+        // Update the active section based on section positions
+        if (section3Ref.current && section3Ref.current.getBoundingClientRect().top <= 150) {
             setActiveSection('section3');
-        } else if (section2Ref.current && section2Ref.current.getBoundingClientRect().top <= 100) {
+        } else if (section2Ref.current && section2Ref.current.getBoundingClientRect().top <= 150) {
             setActiveSection('section2');
-        } else if (section1Ref.current && section1Ref.current.getBoundingClientRect().top <= 100) {
+        } else if (section1Ref.current && section1Ref.current.getBoundingClientRect().top <= 150) {
             setActiveSection('section1');
         }
     };
@@ -93,7 +107,12 @@ const HomePage = () => {
                     <p className={styles.date}>16 November 2024 o’clock 10:00 AM</p>
                     <p className={styles.title}>Global Green Economy</p>
                     <p className={styles.description}>Financing, Innovation, and Climate Action</p>
-                    <button onClick={() => setIsOpen(true)}>Register</button>
+                    <button
+                        onClick={() =>
+                            //  setIsOpen(true)
+                            router.push('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link')
+                        }
+                    >Register</button>
                     <div className={styles.companies} ref={section1Ref}>
                         <div className={styles.logo1}>{adb_institute}</div>
                         <div className={styles.logo2}>{adb}</div>
@@ -112,10 +131,15 @@ const HomePage = () => {
                     <ContentSection />
                 </div>
                 <div className={styles.section2}>
-                    <AgendaSection refProp={section2Ref} onImageClick={() => handleNavClick('section3')}  />
+                    <AgendaSection refProp={section2Ref} onImageClick={() => handleNavClick('section3')} />
                 </div>
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '68px' }}>
-                    <button onClick={() => setIsOpen(true)}>Register</button>
+                    <button
+                        onClick={() =>
+                            //  setIsOpen(true)
+                            router.push('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link')
+                        }
+                    >Register</button>
                 </div>
                 <div ref={section3Ref} id="section3" className={styles.section3}>
                     <SpeakersSection />

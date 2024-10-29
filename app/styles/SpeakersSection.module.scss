@@ -20,6 +20,7 @@
         width: 95%;
         column-gap: 37.45px;
         row-gap: 39.99px;
+
         .speaker {
             @include flex-center;
             flex-direction: column;
@@ -29,7 +30,8 @@
                 height: 126px;
                 border-radius: 50%;
                 border: 6px solid rgba(48, 70, 115, 0.2);
-                .img{
+                cursor: pointer;
+                .img {
                     border-radius: 50%;
                 }
             }
@@ -57,5 +59,19 @@
                 margin-top: 12px;
             }
         }
+    }
+
+}
+
+.popover {
+
+    .popover_content {
+        margin: 20px 0px;
+        color: #231F20;
+        font-family: Gotham Book;
+        font-size: 14.841px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
     }
 }
