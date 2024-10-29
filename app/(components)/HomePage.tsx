@@ -127,23 +127,25 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.section1}>
-                    <ContentSection />
-                </div>
-                <div className={styles.section2}>
-                    <AgendaSection refProp={section2Ref} onImageClick={() => handleNavClick('section3')} />
-                </div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '68px' }}>
-                    <button
-                        onClick={() =>
-                            //  setIsOpen(true)
-                            router.push('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link')
-                        }
-                    >Register</button>
-                </div>
-                <div ref={section3Ref} id="section3" className={styles.section3}>
-                    <SpeakersSection />
-                    <Footer />
+                <div style={{width:'100%',display:'flex',flexDirection:'column',alignItems:'center',gap:'70px'}}>
+                    <div className={styles.section1}>
+                        <ContentSection />
+                    </div>
+                    <div className={styles.section2}>
+                        <AgendaSection refProp={section2Ref} onImageClick={() => handleNavClick('section3')} />
+                    </div>
+                    <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '68px' }}>
+                        <button
+                            onClick={() =>
+                                //  setIsOpen(true)
+                                router.push('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link')
+                            }
+                        >Register</button>
+                    </div>
+                    <div ref={section3Ref} id="section3" className={styles.section3}>
+                        <SpeakersSection />
+                        <Footer />
+                    </div>
                 </div>
             </div>
             {isOpen && <RegisterModal isOpen={isOpen} setIsOpen={setIsOpen} />}

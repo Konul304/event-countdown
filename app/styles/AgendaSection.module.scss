@@ -4,11 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 53%;
+    margin-top: 100%;
 
     .agenda_header_bg {
         width: 935px;
-        margin-top: 290px;
         background: linear-gradient(to right,
                 rgba(93, 166, 206, 1),
                 rgba(24, 57, 108, 1));
@@ -166,5 +165,24 @@
                 padding: 44px 27px 4px;
             }
         }
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+    .agenda_container{
+    margin-top: 105%;
+    }
+}
+
+@media screen and (max-width:1175px) {
+    .agenda_container{
+        margin-top: 135%;
+    .agenda_header_bg{
+        width: 850px;
+    }
+    .agenda_content{
+        width: 850px;
+    }
     }
 }

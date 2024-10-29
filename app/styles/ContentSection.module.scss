@@ -3,7 +3,7 @@
 .content_section {
     position: absolute;
     z-index: 1;
-    top: -50px;
+    top: 102%;
     left: 18%;
     right: 18%;
     width: 939px;
@@ -83,5 +83,30 @@
                 height: 100px !important;
             }
         }
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .content_section{
+        top: 85%;
+        
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .content_section{
+        left: 10%;
+        .content_footer{
+            width: 700px;
+            .bottom{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .content_section {
+            width:800px;
     }
 }
