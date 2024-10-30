@@ -10,6 +10,7 @@ import Footer from './Footer';
 import Head from 'next/head';
 import RegisterModal from './RegisterModal';
 import { useRouter } from 'next/navigation';
+import ContentAccordion from './ContentAccordion';
 
 
 const HomePage = () => {
@@ -132,14 +133,15 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '70px' }}>
+                <div className={styles.sections_container}>
                     <div className={styles.section1}>
                         <ContentSection />
+                        <ContentAccordion/>
                     </div>
                     <div className={styles.section2}>
                         <AgendaSection refProp={section2Ref} onImageClick={() => handleNavClick('section3')} />
                     </div>
-                    <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '68px' }}>
+                    <div className={styles.button_container} >
                         <button className={styles.secondButton}
                             onClick={() =>
                                 window.open('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link', '_blank')
