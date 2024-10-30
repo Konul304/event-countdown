@@ -280,6 +280,17 @@ const mini_map = (
         <path d="M7.99992 0.666504C6.23181 0.666504 4.53612 1.36888 3.28587 2.61913C2.03563 3.86937 1.33325 5.56506 1.33325 7.33317C1.33325 8.90984 1.66825 9.9415 2.58325 11.0832L7.99992 17.3332L13.4166 11.0832C14.3316 9.9415 14.6666 8.90984 14.6666 7.33317C14.6666 5.56506 13.9642 3.86937 12.714 2.61913C11.4637 1.36888 9.76803 0.666504 7.99992 0.666504Z" stroke="white" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 
+);
+
+const minus = (
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+        <path d="M3.1189 8H11.8518" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+);
+const plus = (
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+        <path d="M7.48537 3.3335V12.6668M3.1189 8.00016H11.8518" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
 )
 
 
@@ -292,5 +303,7 @@ export {
     onsite,
     email_icon,
     company_icon,
-    mini_map
+    mini_map,
+    minus,
+    plus
 };
