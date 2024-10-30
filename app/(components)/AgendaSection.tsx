@@ -22,6 +22,9 @@ const AgendaSection = ({
                     <div style={{ fontFamily: 'Gotham Book' }}>
                         Climate Action, Financing <br /> and Innovation
                     </div>
+                    <div className={styles.bottom_right}>
+                        Physical attendance is by invitation only
+                    </div>
                 </div>
             </div>
             <div className={styles.agenda_content} >
@@ -82,11 +85,16 @@ const AgendaSection = ({
                             <div style={{ marginBottom: '12.9px' }}>
                                 Roundtable Discussion: confirmed participants
                             </div>
+                        </div>
+
+                        <div className={styles.info_content}  style={{marginBottom:'17px'}}>
+                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
-                                Session chair: <span>NICOLAS J.A. BUCHOUD, Senior Consultant and
-                                    Advisor to the Dean, ADBI</span>
+                            <span className={styles.session_chair}>Session chair: </span><span>NICOLAS J.A. BUCHOUD, Senior Consultant and
+                            Advisor to the Dean, ADBI</span>
                             </div>
                         </div>
+                        
                         <div className={styles.info_content}>
                             <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
@@ -103,13 +111,20 @@ const AgendaSection = ({
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick}  />
+                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 CANDICE McDEIGAN <br />
                                 Head of the Asian Development Bank's Resident Mission
                                 in Azerbaijan (TBC)
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className={styles.agenda_flex} style={{ marginTop: '17px' }}>
+                    <div className={styles.time}>
+                    </div>
+                    <div className={styles.info_header} style={{ marginLeft: '0px' }}>
+                        Q&A
                     </div>
                 </div>
                 <hr />
@@ -143,9 +158,13 @@ const AgendaSection = ({
                             <div style={{ marginBottom: '12.9px' }}>
                                 Roundtable Discussion: confirmed participants
                             </div>
+                            
+                        </div>
+                        <div className={styles.info_content} style={{marginBottom:'17px'}}>
+                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
-                                Session chair: <span>Dr. KUAT AKIZHANOV, Deputy director, CAREC
-                                    Institute</span>
+                            <span className={styles.session_chair}>Session chair: </span><span>Dr. KUAT AKIZHANOV, Deputy director, CAREC
+                            Institute</span>
                             </div>
                         </div>
                         <div className={styles.info_content}>
@@ -186,6 +205,13 @@ const AgendaSection = ({
                                 Head of the Turkic World Research Center, CAERC (TBC)
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className={styles.agenda_flex} style={{ marginTop: '17px' }}>
+                    <div className={styles.time}>
+                    </div>
+                    <div className={styles.info_header} style={{ marginLeft: '0px' }}>
+                        Q&A
                     </div>
                 </div>
                 <hr />
