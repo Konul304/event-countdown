@@ -4,10 +4,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100%;
+    margin-top: 65.36%;
 
     .agenda_header_bg {
-        width: 935px;
+        position: relative;
+        width: 65.36%;
         background: linear-gradient(to right,
                 rgba(93, 166, 206, 1),
                 rgba(24, 57, 108, 1));
@@ -22,6 +23,18 @@
             line-height: 56.52px;
             text-align: left;
             color: #fff;
+        }
+
+        .bottom_right {
+            position: absolute;
+            bottom: 20px;
+            right: 48px;
+            font-family: Gotham Book;
+            font-size: 18.841px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: right;
         }
     }
 
@@ -60,7 +73,7 @@
 
     .agenda_content {
         position: relative;
-        width: 935px;
+        width: 65.36%;
         padding-top: 54.34px;
         padding-bottom: 42.51px;
         background-color: rgba(249, 249, 249, 1);
@@ -125,7 +138,7 @@
         }
 
         hr {
-            width: 815.64px;
+            width: 86%;
             height: 1px;
             margin: 0 auto;
             background-color: rgba(0, 97, 107, 1);
@@ -166,23 +179,49 @@
             }
         }
     }
+
+    .session_chair {
+        color: #00616B;
+        font-family: Gotham;
+        font-size: 18.841px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 }
 
 
-@media screen and (max-width:1400px) {
-    .agenda_container{
-    margin-top: 105%;
+@media screen and (max-width:1435px) {
+    .agenda_container {
+        margin-top: 78%;
     }
 }
 
-@media screen and (max-width:1175px) {
-    .agenda_container{
-        margin-top: 135%;
-    .agenda_header_bg{
-        width: 850px;
+@media screen and (max-width:1338px) {
+    .agenda_container {
+        margin-top: 88%;
     }
-    .agenda_content{
-        width: 850px;
+}
+
+
+@media screen and (max-width:1265px) {
+    .agenda_container {
+        margin-top: 98%;
     }
+}
+
+@media screen and (max-width:1190px) {
+    .agenda_container {
+        display: none;
     }
+
+    // .agenda_container {
+    //     margin-top: 100%;
+    //     // .agenda_header_bg{
+    //     //     width: 850px;
+    //     // }
+    //     // .agenda_content{
+    //     //     width: 850px;
+    //     // }
+    // }
 }

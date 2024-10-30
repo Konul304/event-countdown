@@ -17,6 +17,8 @@ const HomePage = () => {
     const [activeSection, setActiveSection] = useState('section1');
     const [navbarSolid, setNavbarSolid] = useState(false);
     const [isOpen, setIsOpen] = useState<boolean>(false)
+    const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     const section1Ref = useRef<HTMLDivElement>(null);
     const section2Ref = useRef<HTMLDivElement>(null);
@@ -64,8 +66,14 @@ const HomePage = () => {
     };
 
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
+        if (typeof window !== 'undefined') {
+            setIsMobile(window.innerWidth <= 900);
+            window.addEventListener('resize', () => setIsMobile(window.innerWidth <= 900));
+            window.addEventListener('scroll', handleScroll);
+        }
+
         return () => {
+            window.removeEventListener('resize', () => setIsMobile(window.innerWidth <= 900));
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
@@ -80,37 +88,34 @@ const HomePage = () => {
             </Head>
             <div className={styles.homepage_container}>
                 <nav className={`${styles.navbar} ${navbarSolid ? styles.navbar_solid : ''}`}>
-                    <ul>
-                        <li
-                            className={activeSection === 'section1' ? styles.active : ''}
-                            onClick={() => handleNavClick('section1')}
-                        >
-                            About training
-                        </li>
-                        <li
-                            className={activeSection === 'section3' ? styles.active : ''}
-                            onClick={() => handleNavClick('section3')}
-                        >
-                            Speakers
-                        </li>
-                        <li
-                            className={activeSection === 'section2' ? styles.active : ''}
-                            onClick={() => handleNavClick('section2')}
-                        >
-                            Agenda
-                        </li>
-                    </ul>
+                    {isMobile ? (
+                        <div className={styles.burgerIcon} onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}>
+                            &#9776; {/* Burger icon */}
+                        </div>
+                    ) : (
+                        <ul>
+                            <li className={activeSection === 'section1' ? styles.active : ''} onClick={() => handleNavClick('section1')}>About training</li>
+                            <li className={activeSection === 'section3' ? styles.active : ''} onClick={() => handleNavClick('section3')}>Speakers</li>
+                            <li className={activeSection === 'section2' ? styles.active : ''} onClick={() => handleNavClick('section2')}>Agenda</li>
+                        </ul>
+                    )}
+                    {isBurgerMenuOpen && (
+                        <ul className={styles.burgerMenu}>
+                            <li onClick={() => handleNavClick('section1')}>About training</li>
+                            <li onClick={() => handleNavClick('section3')}>Speakers</li>
+                            <li onClick={() => handleNavClick('section2')}>Agenda</li>
+                        </ul>
+                    )}
                 </nav>
                 <div className={styles.info_container}>
                     <div className={styles.bg_gradient}>{gradient_bg}</div>
                     <CountdownTimer />
-                    <p className={styles.date}>16 November 2024 o’clock 10:00 AM</p>
+                    <p className={styles.date}>16 November 2024 o’clock 09:00 AM</p>
                     <p className={styles.title}>Global Green Economy</p>
-                    <p className={styles.description}>Financing, Innovation, and Climate Action</p>
+                    <p className={styles.description}> Climate Action, Financing and Innovation</p>
                     <button
                         onClick={() =>
-                            //  setIsOpen(true)
-                            router.push('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link')
+                            window.open('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link', '_blank')
                         }
                     >Register</button>
                     <div className={styles.companies} ref={section1Ref}>
@@ -120,14 +125,14 @@ const HomePage = () => {
                         <div className={styles.logo4} style={{ display: 'flex', gap: '10.13px', alignItems: 'center' }}>
                             {gerb}
                             <div className={styles.center_name}>
-                                İQTİSADİ İSLAHATLARIN TƏHLİLİ VƏ
-                                KOMMUNİKASİYA MƏRKƏZİNİN MONİTORİNQ
-                                VƏ QİYMƏTLƏNDİRMƏ ÜZRƏ PORTALI
+                                Center for Analysis of Economic <br />
+                                Reforms and Communication of<br />
+                                the Republic of Azerbaijan
                             </div>
                         </div>
                     </div>
                 </div>
-                <div style={{width:'100%',display:'flex',flexDirection:'column',alignItems:'center',gap:'70px'}}>
+                <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '70px' }}>
                     <div className={styles.section1}>
                         <ContentSection />
                     </div>
@@ -135,10 +140,9 @@ const HomePage = () => {
                         <AgendaSection refProp={section2Ref} onImageClick={() => handleNavClick('section3')} />
                     </div>
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '68px' }}>
-                        <button
+                        <button className={styles.secondButton}
                             onClick={() =>
-                                //  setIsOpen(true)
-                                router.push('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link')
+                                window.open('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link', '_blank')
                             }
                         >Register</button>
                     </div>
