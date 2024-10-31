@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../styles/AgendaSection.module.scss";
-import a from "../images/image.png";
+import image3 from "../images/speakers/image3.png";
 import Image from 'next/image';
 
 const AgendaSection = ({
@@ -46,7 +46,7 @@ const AgendaSection = ({
                             Opening Remarks
                         </div>
                         <div className={styles.info_content}>
-                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Prof. Dr. VUSAL GASIMLI <br />
                                 Executive Director of the Center for Analysis of Economic
@@ -54,14 +54,14 @@ const AgendaSection = ({
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. TETSUSHI SONOBE <br />
                                 Dean and CEO of the Asian Development Bank Institute
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 CANDICE McDEIGAN <br />
                                 Head of the Asian Development Bank's Resident Mission
@@ -87,16 +87,16 @@ const AgendaSection = ({
                             </div>
                         </div>
 
-                        <div className={styles.info_content}  style={{marginBottom:'17px'}}>
-                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
+                        <div className={styles.info_content} style={{ marginBottom: '17px' }}>
+                            <Image className={styles.image} src={image3} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
-                            <span className={styles.session_chair}>Session chair: </span><span>NICOLAS J.A. BUCHOUD, Senior Consultant and
-                            Advisor to the Dean, ADBI</span>
+                                <span className={styles.session_chair}>Session chair: </span><span>NICOLAS J.A. BUCHOUD, Senior Consultant and
+                                    Advisor to the Dean, ADBI</span>
                             </div>
                         </div>
-                        
+
                         <div className={styles.info_content}>
-                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Prof. Dr. VUSAL GASIMLI <br />
                                 Executive Director of the Center for Analysis of Economic
@@ -104,14 +104,14 @@ const AgendaSection = ({
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. TETSUSHI SONOBE <br />
                                 Dean and CEO of the Asian Development Bank Institute
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 CANDICE McDEIGAN <br />
                                 Head of the Asian Development Bank's Resident Mission
@@ -158,17 +158,17 @@ const AgendaSection = ({
                             <div style={{ marginBottom: '12.9px' }}>
                                 Roundtable Discussion: confirmed participants
                             </div>
-                            
+
                         </div>
-                        <div className={styles.info_content} style={{marginBottom:'17px'}}>
-                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
+                        <div className={styles.info_content} style={{ marginBottom: '17px' }}>
+                            <Image className={styles.image} src={image3} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
-                            <span className={styles.session_chair}>Session chair: </span><span>Dr. KUAT AKIZHANOV, Deputy director, CAREC
-                            Institute</span>
+                                <span className={styles.session_chair}>Session chair: </span><span>Dr. KUAT AKIZHANOV, Deputy director, CAREC
+                                    Institute</span>
                             </div>
                         </div>
                         <div className={styles.info_content}>
-                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Prof. Dr. SIDDHARTH SAXENA <br />
                                 Chairperson of the Cambridge Central Asia Forum of the
@@ -177,21 +177,21 @@ const AgendaSection = ({
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. GHULAM SAMAD <br />
                                 Head of the Research Division, CAREC Institute
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. JOACHIM MONKELBAAN <br />
                                 Senior Fellow, KAPSARC
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. RASHAD HUSEYNOV<br />
                                 Director of Agrarian Research Center, Ministry of Agriculture
@@ -199,7 +199,7 @@ const AgendaSection = ({
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 VUSALA JAFAROVA<br />
                                 Head of the Turkic World Research Center, CAERC (TBC)
@@ -227,7 +227,7 @@ const AgendaSection = ({
 
                         </div>
                         <div className={styles.info_content}>
-                            <Image className={styles.image} src={a} width={39} height={39} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Prof. Dr. VUSAL GASIMLI<br />
                                 Executive Director of the Center for Analysis of Economic
@@ -235,7 +235,7 @@ const AgendaSection = ({
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={a} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image3} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. TETSUSHI SONOBE<br />
                                 Dean and CEO of the Asian Development Bank Institute
