@@ -9,12 +9,10 @@ import SpeakersSection from './SpeakersSection';
 import Footer from './Footer';
 import Head from 'next/head';
 import RegisterModal from './RegisterModal';
-import { useRouter } from 'next/navigation';
 import ContentAccordion from './ContentAccordion';
 
 
 const HomePage = () => {
-    const router = useRouter();
     const [activeSection, setActiveSection] = useState('section1');
     const [navbarSolid, setNavbarSolid] = useState(false);
     const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -66,6 +64,15 @@ const HomePage = () => {
         }
     };
 
+    const handleDownload = () => {
+        console.log('object')
+        const link = document.createElement('a');
+        link.href = 'https://drive.google.com/file/d/1epM6jNIOly7xLulUf7lWGTTB2of0nHXu/view?usp=sharing'; // Change this path to the relative path of your PDF file
+        link.target = '_blank'; // Open in a new tab
+        link.rel = 'noopener noreferrer'; // Security measure for opening new tabs
+        link.click();
+    }
+
     useEffect(() => {
         if (typeof window !== 'undefined') {
             setIsMobile(window.innerWidth <= 900);
@@ -115,7 +122,7 @@ const HomePage = () => {
                     <p className={styles.title}>Global Green Economy</p>
                     <p className={styles.description}> Climate Action, Financing and Innovation</p>
                     <div className={styles.buttons_container}>
-                        <div className={styles.download_agenda}>
+                        <div className={styles.download_agenda} onClick={handleDownload}>
                             <div>{download}</div>
                             <div>Agenda</div>
                         </div>

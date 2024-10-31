@@ -1,8 +1,9 @@
 import { Collapse } from 'antd'
 import { CollapseProps } from 'antd/es/collapse/Collapse';
 import { SettingOutlined } from '@ant-design/icons';
-import { minus, plus } from '../images/icons';
+import { calendar_icon, location_icon, minus, onsite, plus } from '../images/icons';
 import styles from "../styles/ContentSection.module.scss";
+import ContentFooter from './ContentFooter';
 
 
 const ContentAccordion = () => {
@@ -98,6 +99,7 @@ const ContentAccordion = () => {
                 expandIconPosition={"end"}
                 items={item3}
             />
+            <ContentFooter />
         </div>
     )
 }
