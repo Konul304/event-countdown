@@ -31,11 +31,14 @@
                 border-radius: 50%;
                 border: 6px solid rgba(48, 70, 115, 0.2);
                 cursor: pointer;
-                .link{
+
+                .link {
                     position: relative;
                     z-index: -3;
                 }
+
                 .img {
+                    z-index: 5;
                     border-radius: 50%;
                     object-fit: contain;
                     // padding-top: 10px;
@@ -81,11 +84,33 @@
         font-weight: 400;
         line-height: 25px;
     }
+
+    .name {
+        margin-top: 16px;
+        font-family: Inter, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.78px;
+        text-align: center;
+        color: rgba(48, 70, 115, 1);
+
+    }
+
+    .position {
+        font-family: Gotham Book;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        text-align: center;
+        color: #808EA9;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (max-width: 1190px) {
     .speakers_container {
-        margin-top: 83%;
+        margin-top: 130%;
     }
 
     .speakers_header {
@@ -95,37 +120,61 @@
 
 @media only screen and (max-width: 1150px) {
     .speakers_container {
-        margin-top: 95%;
+        margin-top: 140%;
     }
 }
 
-@media only screen and (max-width: 1085px) {
+@media only screen and (max-width: 1090px) {
     .speakers_container {
-        margin-top: 105%;
+        margin-top: 150%;
     }
 }
 
-@media only screen and (max-width: 1035px) {
+@media only screen and (max-width: 1076px) {
     .speakers_container {
-        margin-top: 115%;
+        margin-top: 160%;
+    }
+}
+
+@media only screen and (max-width: 1045px) {
+    .speakers_container {
+        margin-top: 170%;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    .speakers_container {
+        margin-top: 180%;
     }
 }
 
 @media only screen and (max-width: 1005px) {
     .speakers_container {
-        margin-top: 125%;
+        margin-top: 190%;
     }
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 980px) {
     .speakers_container {
-        margin-top: 135%;
+        margin-top: 200%;
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 960px) {
     .speakers_container {
-        margin-top: 155%;
+        margin-top: 210%;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .speakers_container {
+        margin-top: 220%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .speakers_container {
+        margin-top: 230%;
     }
 }
 
@@ -158,9 +207,11 @@
                 .image {
                     width: 53px;
                     height: 53px;
-                    .link{
+
+                    .link {
                         z-index: 1;
                     }
+
                     img {
                         width: 41.3px;
                         height: 42px;
