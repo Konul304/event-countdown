@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import CountdownTimer from './Countdown'
 import styles from "../styles/HomePage.module.scss"
-import { adb, adb_institute, carec_logo, download, gerb, gradient_bg } from "../images/icons"
+import { adb, adb_institute, carec_logo, download, gerb } from "../images/icons"
 import ContentSection from './ContentSection';
 import AgendaSection from './AgendaSection';
 import SpeakersSection from './SpeakersSection';
@@ -67,7 +67,7 @@ const HomePage = () => {
     const handleDownload = () => {
         console.log('object')
         const link = document.createElement('a');
-        link.href = 'https://drive.google.com/file/d/1epM6jNIOly7xLulUf7lWGTTB2of0nHXu/view?usp=sharing'; // Change this path to the relative path of your PDF file
+        link.href = 'https://drive.google.com/file/d/19Rdn_AB0uWC91vQcKXk_2PtRv8iAEY2E/view?usp=sharing'; // Change this path to the relative path of your PDF file
         link.target = '_blank'; // Open in a new tab
         link.rel = 'noopener noreferrer'; // Security measure for opening new tabs
         link.click();
