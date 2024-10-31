@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import CountdownTimer from './Countdown'
 import styles from "../styles/HomePage.module.scss"
-import { adb, adb_institute, carec_logo, gerb, gradient_bg } from "../images/icons"
+import { adb, adb_institute, carec_logo, download, gerb, gradient_bg } from "../images/icons"
 import ContentSection from './ContentSection';
 import AgendaSection from './AgendaSection';
 import SpeakersSection from './SpeakersSection';
@@ -114,11 +114,17 @@ const HomePage = () => {
                     <p className={styles.date}>16 November 2024 o’clock 09:00 AM</p>
                     <p className={styles.title}>Global Green Economy</p>
                     <p className={styles.description}> Climate Action, Financing and Innovation</p>
-                    <button
-                        onClick={() =>
-                            window.open('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link', '_blank')
-                        }
-                    >Register</button>
+                    <div className={styles.buttons_container}>
+                        <div className={styles.download_agenda}>
+                            <div>{download}</div>
+                            <div>Agenda</div>
+                        </div>
+                        <button className={styles.register_button}
+                            onClick={() =>
+                                window.open('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link', '_blank')
+                            }
+                        >Register</button>
+                    </div>
                     <div className={styles.companies} ref={section1Ref}>
                         <div className={styles.logo1}>{adb_institute}</div>
                         <div className={styles.logo2}>{adb}</div>
@@ -136,7 +142,7 @@ const HomePage = () => {
                 <div className={styles.sections_container}>
                     <div className={styles.section1}>
                         <ContentSection />
-                        <ContentAccordion/>
+                        <ContentAccordion />
                     </div>
                     <div className={styles.section2}>
                         <AgendaSection refProp={section2Ref} onImageClick={() => handleNavClick('section3')} />

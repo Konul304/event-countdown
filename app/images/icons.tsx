@@ -291,7 +291,13 @@ const plus = (
     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
         <path d="M7.48537 3.3335V12.6668M3.1189 8.00016H11.8518" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
-)
+);
+
+const download = (
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+        <path d="M15.75 11.6379V12.4929C15.75 13.69 15.75 14.2886 15.5048 14.7458C15.289 15.148 14.9448 15.475 14.5215 15.6799C14.0402 15.9129 13.4101 15.9129 12.15 15.9129H5.85C4.58988 15.9129 3.95982 15.9129 3.47852 15.6799C3.05516 15.475 2.71095 15.148 2.49524 14.7458C2.25 14.2886 2.25 13.69 2.25 12.4929V11.6379M12.75 8.07539L9 11.6379M9 11.6379L5.25 8.07539M9 11.6379V3.08789" stroke="#0F356D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+);
 
 
 export {
@@ -305,5 +311,6 @@ export {
     company_icon,
     mini_map,
     minus,
-    plus
+    plus,
+    download
 };
