@@ -380,6 +380,7 @@
 
         .info_container {
             height: 69vh;
+
             .date {
                 font-size: 16px;
             }
@@ -459,8 +460,8 @@
 }
 
 @media only screen and (max-width: 385px) {
-    .homepage_container{
-        .section1{
+    .homepage_container {
+        .section1 {
             padding: 20px 0px;
         }
     }
