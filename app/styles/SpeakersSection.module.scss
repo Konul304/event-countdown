@@ -128,3 +128,54 @@
         margin-top: 0px;
     }
 }
+
+@media only screen and (max-width: 670px) {
+    .speakers_container {
+        margin-top: 0px;
+
+        .speakers_header {
+            color: #00616B;
+            font-family: Gotham;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 78px
+        }
+
+        .speakers {
+            row-gap: 21.99px;
+
+            .speaker {
+                @include flex-center;
+                flex-direction: column;
+
+                .image {
+                    width: 53px;
+                    height: 53px;
+                    img{
+                        width: 41.3px;
+                        height: 42px;
+                    }
+                }
+
+                .name {
+                    margin-top: 6.74px;
+                    font-family: Gotham;
+                    font-size: 7px;
+                    font-weight: 500;
+                }
+
+                .position {
+                    width: 118px;
+                    height: 20px;
+                    color: rgba(48, 70, 115, 0.80);
+                    font-family: Gotham;
+                    font-size: 5.06px;
+                    line-height: normal;
+                    font-weight: 400;
+                    margin-top: -4px;
+                }
+            }
+        }
+    }
+}

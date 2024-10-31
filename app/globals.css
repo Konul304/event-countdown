@@ -156,3 +156,17 @@ html {
   border-top: none !important;
 
 }
+
+@media only screen and (max-width: 900px) {
+  .ant-collapse {
+    width: 600px !important;
+    margin-bottom: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .ant-collapse {
+    width: 361px !important;
+    margin-bottom: 16px !important;
+  }
+}

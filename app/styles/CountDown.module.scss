@@ -50,18 +50,20 @@
     }
 }
 
-// @media only screen and (min-width: 576px) and (max-width: 767px) {
-//     .countdown_container {
-//         gap: 1rem;
+@media only screen and (max-width:670px) {
+    .countdown_container {
+        gap: 45px;
 
-//         .item {
-//             div {
-//                 font-size: 36px;
-//             }
+        .item {
+            div {
+                font-size: 38.167px;
+                height: 65px;
+            }
 
-//             p {
-//                 font-size: 18px;
-//             }
-//         }
-//     }
-// }
+            p {
+                margin-top: 0px;
+                font-size: 9.814px;
+            }
+        }
+    }
+}
