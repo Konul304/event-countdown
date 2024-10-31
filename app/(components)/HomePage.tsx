@@ -116,7 +116,6 @@ const HomePage = () => {
                     )}
                 </nav>
                 <div className={styles.info_container}>
-                    <div className={styles.bg_gradient}>{gradient_bg}</div>
                     <CountdownTimer />
                     <p className={styles.date}>16 November 2024 o’clock 09:00 AM</p>
                     <p className={styles.title}>Global Green Economy</p>
