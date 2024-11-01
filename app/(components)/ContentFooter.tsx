@@ -22,3 +22,5 @@ const ContentFooter = () => {
 }
 
 export default ContentFooter
+
+// Center for Analysis of Economic Reforms and Communication of the Republic of Azerbaijan
