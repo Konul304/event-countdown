@@ -102,14 +102,14 @@ const HomePage = () => {
                         </div>
                     ) : (
                         <ul>
-                            <li className={activeSection === 'section1' ? styles.active : ''} onClick={() => handleNavClick('section1')}>About training</li>
+                            <li className={activeSection === 'section1' ? styles.active : ''} onClick={() => handleNavClick('section1')}>About</li>
                             <li className={activeSection === 'section3' ? styles.active : ''} onClick={() => handleNavClick('section3')}>Speakers</li>
                             <li className={activeSection === 'section2' ? styles.active : ''} onClick={() => handleNavClick('section2')}>Agenda</li>
                         </ul>
                     )}
                     {isBurgerMenuOpen && (
                         <ul className={styles.burgerMenu}>
-                            <li onClick={() => handleNavClick('section1')}>About training</li>
+                            <li onClick={() => handleNavClick('section1')}>About</li>
                             <li onClick={() => handleNavClick('section3')}>Speakers</li>
                             <li onClick={() => handleNavClick('section2')}>Agenda</li>
                         </ul>
