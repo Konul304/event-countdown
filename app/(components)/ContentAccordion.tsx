@@ -1,7 +1,7 @@
 import { Collapse } from 'antd'
 import { CollapseProps } from 'antd/es/collapse/Collapse';
 import { SettingOutlined } from '@ant-design/icons';
-import { calendar_icon, location_icon, minus, onsite, plus } from '../images/icons';
+import { minus, plus } from '../images/icons';
 import styles from "../styles/ContentSection.module.scss";
 import ContentFooter from './ContentFooter';
 
@@ -31,44 +31,25 @@ const ContentAccordion = () => {
 
     const item1: CollapseProps['items'] = [
         {
-            label: 'This is panel header 1',
-            children: <div>The Global Think Tanks Forum, co-organized by the Center for Analysis of
-                Economic Reforms and Communication (CAERC), the ADB Institute, the Asian
-                Development Bank, and The CAREC Institute, aims to convene diverse
-                stakeholders—government officials, think tanks, scholars, private sector leaders,
-                NGOs, and more—to boost climate ambitions and spotlight green finance under
-                Azerbaijan's COP29 presidency. The Forum encourages commitment to
-                ambitious national plans, transparency, and finance as a vital tool for reducing
-                emissions, adapting to climate change, and addressing loss and damage. Think
-                tanks are instrumental in enhancing COP29's outcomes by fostering
-                collaboration, accountability, and advocacy for robust climate action, offering
-                both immediate and sustainable long-term solutions.</div>,
+            label: 'Global Think Tanks Forum: Advancing Climate Ambitions',
+            children: <div>The Global Think Tanks Forum is co-organized by the Center for Analysis of Economic Reforms and Communication (CAERC), the ADB Institute, the Asian Development Bank, and the CAREC Institute. It is hosted by CAERC on the occasion of COP29 in Baku, as announced on the sidelines of the UN Summit of the Future in New York in September 2024. Central Asian and global think tanks, along with decision-makers from government, the private sector, academia, and NGOs, are gathering to boost the effective delivery of climate ambitions and to spotlight green finance under Azerbaijan's COP29 presidency and beyond, as part of the UAE-Azerbaijan-Brazil climate COP presidencies troika. Think tanks play a crucial role in enhancing COP29 outcomes by fostering collaboration, accountability, advocacy, and engagement with the G20 macroeconomic forum.</div>,
             extra: genExtra(),
         },
 
     ];
     const item2: CollapseProps['items'] = [
         {
-            label: 'This is panel header 1',
-            children: <div>Key discussions will focus on global climate strategies across three pillars:
-                mitigation, adaptation, and energy transition. This segment will explore
-                emissions reduction, preparation for climate impacts, and sustainable energy
-                transitions as interconnected pathways toward a resilient future, with insights on
-                policy, technology, and regional initiatives that balance environmental
-                sustainability with economic growth.</div>,
+            label: 'Baku COP29: Climate Action, Finance, and Partnerships',
+            children: <div>Climate action and development are two sides of the same coin, with the Global South, particularly the most vulnerable countries, at the forefront of climate challenges and transformations. The Baku COP29 edition of the global think tanks cooperation will address both regional and global climate agendas, focusing on the effective implementation of ambitious and transparent national climate plans, the financing of the loss and damage fund, and the development of innovative partnerships under article 6 of the Paris Agreement to advance carbon markets.</div>,
             extra: genExtra(),
         },
 
     ];
     const item3: CollapseProps['items'] = [
         {
-            label: 'This is panel header 1',
-            children: <div>Another focal discussion will address green finance's role in strengthening global
-                climate resilience. Here, participants will examine how the financial sector, including
-                governments, institutions, and investors, can align capital with sustainability goals.
-                Topics will include green bonds, sustainable investment frameworks, and
-                innovative financial products that drive climate-resilient economies, underscoring
-                finance's critical role in advancing impactful climate solutions.</div>,
+            label: 'Sustainability and Green Finance: Pathways to Climate Resilience',
+            children: <div>The Forum will foster an interactive dialogue among decision-makers, researchers, and practitioners.
+                The first part, “Global Pathways to Sustainability: Mitigation, Adaptation, and Energy Transition”, will focus on emissions reduction, climate adaptation, and energy transitions as interconnected pathways to a resilient future. This section will feature insights on policies, technologies, and regional initiatives that balance environmental sustainability with economic growth.The second part, “Green Finance for Global Climate Resilience: Strategies and Innovations”, will explore the role of green finance in strengthening global climate resilience. It will examine how the financial sector, including public and private investors, can align capital with sustainability goals. Topics will include green bonds, sustainable investment frameworks, and innovative financial products that drive climate-resilient economies, highlighting finance's critical role in advancing impactful climate solutions.</div>,
             extra: genExtra(),
         },
 
