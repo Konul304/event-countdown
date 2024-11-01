@@ -57,7 +57,7 @@ const AgendaSection = ({
                     <div className={styles.time}>
                     </div>
                     <div className={styles.info_header} style={{ marginTop: '20px' }}>
-                        Event Moderator : <span>KAORI HITOMI</span>
+                        Event Moderator : <span>KAORI HITOMI <br />Media and Partnership Consultant, ADBI</span>
                     </div>
                 </div>
                 <div style={{ marginTop: '25px' }} className={styles.agenda_flex}>
@@ -138,7 +138,7 @@ const AgendaSection = ({
                         <div className={styles.info_content} style={{ marginBottom: '17px' }}>
                             <Image className={styles.image} src={image4} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
-                                <span className={styles.session_chair}>Session chair: </span><span>NICOLAS J.A. BUCHOUD<br/>Senior Advisor to the Dean and CEO, Asian
+                                <span className={styles.session_chair}>Session chair: </span><span>NICOLAS J.A. BUCHOUD<br />Senior Advisor to the Dean and CEO, Asian
                                     Development Bank Institute</span>
                             </div>
                         </div>
@@ -329,7 +329,7 @@ const AgendaSection = ({
                         13:00 - 15:00
                     </div>
                     <div className={styles.info_header} style={{ marginLeft: '0px' }}>
-                        Lunch
+                        Networking lunch
                     </div>
                 </div>
                 <hr />

@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { BulatYessekinBio, CandiceMcDeiganBio, FakhriJHasanovBio, GhulamSamadBio, JoachimMonkelbaanBio, KuatAkizhanovBio, NicolasBuchoudBio, RashadHuseynovBio, ShenXiaomengBio, SiddharthSaxenaBio, TetsushiSonobeBio, VusalGasimliBio } from "../data/bio";
+import { AdilNajamBio, AmarBhattacharyaBio, BambangBrodjonegoroBio, BulatYessekinBio, CandiceMcDeiganBio, FakhriJHasanovBio, GhulamSamadBio, IzabellaTeixeiraBio, JoachimMonkelbaanBio, KuatAkizhanovBio, MargheritaBianchiBio, NicolasBuchoudBio, RafaelaGuedesBio, RashadHuseynovBio, ShenXiaomengBio, ShinobuYamaguchiBio, SiddharthSaxenaBio, TetsushiSonobeBio, VusalGasimliBio } from "../data/bio";
 
 interface Speaker {
     name: string;
@@ -87,44 +87,44 @@ export const speakersData: Speaker[] = [
     {
         name: "Amar Bhattacharya",
         position: "Senior Fellow, Brookings Institution",
-        image: require("../images/speakers/image12.png"),
-        bio: RashadHuseynovBio,
+        image: require("../images/speakers/image13.png"),
+        bio: AmarBhattacharyaBio,
     },
     {
         name: "Bambang Brodjonegoro",
         position: "Former Finance Minister, Indonesia",
         image: require("../images/speakers/image14.png"),
-        bio: RashadHuseynovBio,
+        bio: BambangBrodjonegoroBio,
     },
     {
         name: "Adil Najam",
         position: "Dean Emeritus; Professor of International Relations and Earth & Environment",
         image: require("../images/speakers/image15.png"),
-        bio: RashadHuseynovBio,
+        bio: AdilNajamBio,
         style: { objectFit: 'cover', paddingTop: '5px' }
     },
     {
         name: "Izabella Teixeira",
         position: "Co-chair, UNEP International Resource Panel; Former Brazilian Environment Minister",
         image: require("../images/speakers/image16.png"),
-        bio: RashadHuseynovBio,
+        bio: IzabellaTeixeiraBio,
     },
     {
         name: "Shinobu Yamaguchi",
         position: "Director, United Nations University Institute for the Advanced Study of Sustainability",
         image: require("../images/speakers/image17.png"),
-        bio: RashadHuseynovBio,
+        bio: ShinobuYamaguchiBio,
     },
     {
         name: "Rafaela Guedes – Brazil",
         position: "Senior fellow, Brazilian Center for International Relations",
         image: require("../images/speakers/image18.png"),
-        bio: RashadHuseynovBio,
+        bio: RafaelaGuedesBio,
     },
     {
         name: "Margherita Bianchi",
         position: "Head of the Energy, Climate & Resources Programme",
         image: require("../images/speakers/image19.png"),
-        bio: RashadHuseynovBio,
+        bio: MargheritaBianchiBio,
     },
 ];
