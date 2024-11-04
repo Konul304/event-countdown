@@ -15,7 +15,7 @@ const SpeakersSection = () => (
                 <Popover key={index} placement="right" content={speaker.bio}>
                     <div className={styles.speaker}>
                         <div className={styles.image}>
-                            <a className={styles.link} href="#" target='_blank'>
+                            <a className={styles.link} href={speaker?.link?.includes('linkedin') || speaker?.link?.includes('facebook') ? speaker?.link : `mailto: ${speaker?.link}`} target='_blank'>
                                 <Image style={speaker.style} className={styles.img} src={speaker.image} alt='speaker' width={115} height={115} />
                             </a>
                         </div>
@@ -25,13 +25,13 @@ const SpeakersSection = () => (
                 </Popover>
             ))}
         </div>
-        <div className={styles.speakers_header} style={{marginTop:'5%'}}>Guests</div>
+        <div className={styles.speakers_header} style={{ marginTop: '5%' }}>Guests</div>
         <div className={styles.speakers}>
             {guestsData.map((speaker, index) => (
                 <Popover key={index} placement="right" content={speaker.bio}>
                     <div className={styles.speaker}>
                         <div className={styles.image}>
-                            <a className={styles.link} href="#" target='_blank'>
+                            <a className={styles.link} href={speaker?.link?.includes('linkedin') || speaker?.link?.includes('facebook') ? speaker?.link : `mailto: ${speaker?.link}`} target='_blank'>
                                 <Image style={speaker.style} className={styles.img} src={speaker.image} alt='speaker' width={115} height={115} />
                             </a>
                         </div>
@@ -41,7 +41,7 @@ const SpeakersSection = () => (
                 </Popover>
             ))}
         </div>
-    </div>
+    </div >
 )
 
 export default SpeakersSection

@@ -38,7 +38,7 @@ const TetsushiSonobeBio = (
             Before joining ADBI in April 2020, Dean Sonobe served as the vice president of the National Graduate Institute for Policy Studies (GRIPS), a public policy school in Tokyo, and taught economics for thirty years at Tokyo Metropolitan University and GRIPS. In 2023, he served as the chair of Think7, the think tank engagement group of G7 Japan.  He is also recipient of the Nikkei Book Publication Prize and the Masayoshi Ohira Memorial Prize, and the vice president of the Japanese Association for Development Economics (JADE).
             <br />
             <br />
-            <a href="sonobete@grips.ac.jp" target="_blank">sonobete@grips.ac.jp</a>
+            <a href="mail.to: sonobete@grips.ac.jp" target="_blank">sonobete@grips.ac.jp</a>
         </p>
     </div>
 );
@@ -351,10 +351,10 @@ const MargheritaBianchiBio = (
     <div className={styles.popover}>
         <p className={styles.popover_content}>
             <div className={styles.name}>
-            MARGHERITA BIANCHI 
+                MARGHERITA BIANCHI
             </div>
             <div className={styles.position}>
-            Head of the Energy, Climate & Resources Programme
+                Head of the Energy, Climate & Resources Programme
             </div>
             Margherita Bianchi is Head of the "Energy, Climate & Resources Programme", where she currently coordinates research projects related to Italian, European and international energy and climate policies developments. Her research interests focus on climate policies and their interplay with other policy siloes, energy governance and the related EU external engagement and foreign policy. Before joining the IAI in 2018, she had worked at the European Parliament, with the 2017 task force of the Italian Group of Seven presidency (G7), and interned at the UN Environment Program. Margherita holds political science, international relations and EU affairs degrees from the Catholic University of Milan (BA), the LUISS School of Government in Rome (MA), the Institute of European Studies in Brussels (MA). She frequently provides expert insights to international and Italian news/media outlets.
             Representing the IAI, the Italian Institute for International Affairs. Excellent specialist of climate, energy, and representing IAI as the lead-co chair organization of the T7 (G7) Italy in 2024
