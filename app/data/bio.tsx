@@ -351,10 +351,10 @@ const MargheritaBianchiBio = (
     <div className={styles.popover}>
         <p className={styles.popover_content}>
             <div className={styles.name}>
-                Head of the Energy, Climate & Resources Programme
+            MARGHERITA BIANCHI 
             </div>
             <div className={styles.position}>
-                Senior fellow, Brazilian Center for International Relations
+            Head of the Energy, Climate & Resources Programme
             </div>
             Margherita Bianchi is Head of the "Energy, Climate & Resources Programme", where she currently coordinates research projects related to Italian, European and international energy and climate policies developments. Her research interests focus on climate policies and their interplay with other policy siloes, energy governance and the related EU external engagement and foreign policy. Before joining the IAI in 2018, she had worked at the European Parliament, with the 2017 task force of the Italian Group of Seven presidency (G7), and interned at the UN Environment Program. Margherita holds political science, international relations and EU affairs degrees from the Catholic University of Milan (BA), the LUISS School of Government in Rome (MA), the Institute of European Studies in Brussels (MA). She frequently provides expert insights to international and Italian news/media outlets.
             Representing the IAI, the Italian Institute for International Affairs. Excellent specialist of climate, energy, and representing IAI as the lead-co chair organization of the T7 (G7) Italy in 2024
@@ -369,6 +369,27 @@ const MargheritaBianchiBio = (
         </p>
     </div>
 );
+
+const DinaAzghaliyevaBio = (
+    <div className={styles.popover}>
+        <p className={styles.popover_content}>
+            <div className={styles.name}>
+                Dina Azhgaliyeva
+            </div>
+            <div className={styles.position}>
+                Senior Economist (Climate Change), ADB
+            </div>
+            Dr. Dina Azhgaliyeva is a Research Fellow at the Asian Development Bank Institute (ADBI). Before joining ADBI in July 2019, she worked as a Research Fellow in the energy economics division of the Energy Studies Institute, National University of Singapore. She was also a Research Fellow at the Henley Business School, University of Reading (UK) where she worked on a project ‘Kazakh-British Centre for Competitiveness’. She also worked as a leading and chief specialist for the Tax Committee at the Ministry of Finance of Kazakhstan. Her research focuses on energy policy, particularly renewable energy, energy efficiency, and energy storage. Dina has published articles on these topics in journals such as Technological Forecasting and Social Change, Australasian Journal of Environmental Management, Journal of Environmental Management, Energy Policy and Journal of Sustainable Finance & Investment. She is currently a guest editor for the Applied Energy’s special issue “Integration of Renewable Energy in Energy Systems, Perspectives on Investment, Technology, and Policy”
+
+            <br />
+            <br />
+            <a target="_blank" href="https://www.linkedin.com/in/dina-a-7800b891/?originalSubdomain=sg">https://www.linkedin.com/in/dina-a-7800b891/?originalSubdomain=sg
+            </a>
+
+        </p>
+    </div>
+);
+
 
 
 export {
@@ -390,5 +411,6 @@ export {
     IzabellaTeixeiraBio,
     ShinobuYamaguchiBio,
     RafaelaGuedesBio,
+    DinaAzghaliyevaBio,
     MargheritaBianchiBio
 };

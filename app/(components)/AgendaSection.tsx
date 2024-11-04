@@ -18,6 +18,7 @@ import image18 from "../images/speakers/image18.png";
 import image19 from "../images/speakers/image19.png";
 import image14 from "../images/speakers/image14.png";
 import image20 from "../images/speakers/image20.png";
+import image21 from "../images/speakers/image21.png";
 import Image from 'next/image';
 
 const AgendaSection = ({
@@ -252,6 +253,13 @@ const AgendaSection = ({
                             <div>
                                 Dr. JOACHIM MONKELBAAN <br />
                                 Senior Fellow, KAPSARC
+                            </div>
+                        </div>
+                        <div className={styles.info_content} style={{ marginTop: '23px' }}>
+                            <Image className={styles.image} src={image21} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <div>
+                            Dr. DINA AZHGALIYEVA<br />
+                            Senior Economist (Climate Change), ADB
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
