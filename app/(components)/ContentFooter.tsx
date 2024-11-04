@@ -10,7 +10,7 @@ const ContentFooter = () => {
                 <div className={styles.bottom}>
                     <div className={styles.bottom_flexes}>
                         <div >{location_icon}</div>
-                        <div >47 Gurban Khalilov str. <br />Baku, Azerbaijan, CAERC</div>
+                        <div > Center for Analysis of Economic Reforms and <br/> Communication of the Republic of Azerbaijan<br/>47 Gurban Khalilov str. <br />Baku, Azerbaijan, CAERC</div>
                     </div>
                     <div className={styles.bottom_flexes}>
                         <div>{calendar_icon}</div>
