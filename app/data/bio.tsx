@@ -50,7 +50,7 @@ const CandiceMcDeiganBio = (
                 Candice Patrice McDeigan
             </div>
             <div className={styles.position}>
-                Country Director, ADB
+                Head of the Asian Development Bank's Resident Mission in Azerbaijan (TBC)
             </div>
             Ms. Candice Patrice McDeigan is the Country Director for the Azerbaijan Republic Resident Mission in ADB’s Central and West Asia Department. She is a qualified lawyer and a country director with over 20 years of diverse international private and development experience
             <br /><br />
@@ -66,7 +66,7 @@ const ShenXiaomengBio = (
                 Shen Xiaomeng
             </div>
             <div className={styles.position}>
-                Vice-Rector in Europe & Director of UNU-EHS
+                UN University - Institute for Environment and Human Security
             </div>
             As of 1 August 2020, Prof. Shen Xiaomeng assumed the role of UNU Vice-Rector in Europe (UNU-ViE) and Director of the UNU Institute for Environment and Human Security (UNU-EHS). As the UNU ViceRector in Europe, Prof. Shen facilitates collaboration between UNU and stakeholders in and outside of the United Nations; contributes to high-level policy development with other United Nations entities and regional/national bodies; and guides UNU outreach efforts to Geneva-based UN entities, the European Commission, and European academic and research institutions. As the Director of UNU-EHS, Prof. Shen is the chief academic and administrative officer of the Institute and oversees its direction, organization and programmes. Prior to her appointment with UNU, Prof. Shen worked with the then International Bureau of the German Federal Ministry of Education and Research at the Project Management Agency of the German Aerospace Center (DLR-PT) in various leadership roles on science policy and international cooperation. Before she joined DLR-PT, Prof. Shen worked with UNU-EHS as a Resident Scholar, and thereafter as an Associate Academic Officer with a focus on water-related disaster and risk research from cultural perspectives. She is an honorary professor for Culture of Sustainability at University of Applied Sciences Bonn-Rhein-Sieg, and also serves on the management group of the World Adaptation Science Programme hosted by UNEP and as a member of UN Senior Leadership Group on Disaster Risk Reduction for Resilience (UN SLG). Prof. Shen holds a BA degree in English Literature from the Beijing Foreign Studies University, a MA degree from the University of Bonn in translation and economics and a PhD degree in Geography from the University of Bonn.
             <br /><br /><a target="_blank" href="https://www.linkedin.com/in/shenxiaomeng/?originalSubdomain=de">https://www.linkedin.com/in/shenxiaomeng/?originalSubdomain=de</a>
@@ -82,7 +82,7 @@ const BulatYessekinBio = (
 
             </div>
             <div className={styles.position}>
-                Senior expert on water, environment and climate change in Central Asia
+                Regional Coordinator, Asian Platform on Water and Climate Change
             </div>
             Bulat Yessekin is known as an expert and successful leader in the field of climate change, water resources and sustainable development. In the first years of Kazakhstan's independence, he actively participated in the creation of a national environmental protection system, the development of the Law on Environmental Protection, the Water Code, the Law on the protection of flora and fauna.
             In 1989-1991, he was the head of the department of environmental management of the State Committee for Nature Protection of the Republic of Kazakhstan; he worked on the creation of a republican system of environmental protection funds, the introduction of payments for pollution, a system of compensation for damage. In 1992-1994, he worked as the head of the department for the problems of the Aral, the Caspian and the Semipalatinsk test site, head of the Main Directorate of State Control of Kazakhstan. In 1994-1997, he was the Chairman of the Committee for Nature Protection of Alma-Ata.
@@ -123,7 +123,7 @@ const NicolasBuchoudBio = (
                 Nicolas J.A. Buchoud
             </div>
             <div className={styles.position}>
-                Advisor to the dean and CEO of ADB            </div>
+                Senior Consultant and Advisor to the Dean, ADBI           </div>
             Nicolas is an advisor to the dean of ADBI. Also, he is a fellow at the Global Solutions Initiative (GSI) in Berlin, and at OP Jindal Global University Centre for Sustainability in Sonipat, India. He is an honorary member of the Indonesia Creative Cities Network (ICCN) and an advisor to Indonesia Wellness Institute (IWI), initiated at the G20 summit in Bali in Nov. 2022. A former member of the office of the President of Paris Ile de France Region he is the co-founder and president of the awarded Grand Paris Alliance for Metropolitan development (Cercle Grand Paris de l’Investissement Durable (est. 2011) think-tank specializing. He is the founding principal of Renaissance Urbaine strategic advisory (est. 2006), which has advised several multiyear international excellence research programs in Japan, Russia (Siberia) and
             France.
             <br />
