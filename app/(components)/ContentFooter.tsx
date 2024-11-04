@@ -19,7 +19,7 @@ const ContentFooter = () => {
                         </div>
                         <div className={styles.bottom_flexes}>
                             <div>{calendar_icon}</div>
-                            <div>November 16, 2024 <br />09:30 a.m.</div>
+                            <div>November 16, 2024 <br />09:00 a.m.</div>
                         </div>
                     </div>
                     {/* <div style={{fontFamily:'Gotham Book',marginBottom:'5px'}}>Center for Analysis of Economic Reforms and Communication of the Republic of Azerbaijan</div> */}
