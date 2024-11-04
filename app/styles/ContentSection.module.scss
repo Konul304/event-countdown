@@ -46,7 +46,7 @@
 
 .content_footer {
     width: 823.3px;
-    height: 135.8px;
+    height: 175.8px;
     margin-top: 49.2px;
     position: relative;
     color: rgba(254, 254, 254, 1);
@@ -68,8 +68,14 @@
         align-items: center;
     }
 
+    .center_name_footer {
+        font-family: Gotham Book;
+        margin-left: 3px;
+        margin-bottom: 5px;
+    }
+
     .bottom {
-        display: flex;
+        // display: flex;
         gap: 130px;
         height: 100%;
         background-color: rgba(0, 104, 113, 1);
@@ -160,10 +166,20 @@
             height: 100%;
             font-size: 9px;
             gap: 35px;
+            padding-top: 50px !important;
 
             svg {
                 height: 30px;
             }
+        }
+
+        .center_name_footer {
+            margin-bottom: 0px;
+        }
+
+        .bottom_flex {
+            height: 35px !important;
+            gap: 20% !important;
         }
     }
 }

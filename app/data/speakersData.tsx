@@ -55,6 +55,12 @@ export const speakersData: Speaker[] = [
         bio: FakhriJHasanovBio,
     },
     {
+        name: "RAFAELA GUEDES",
+        position: "Senior fellow, Brazilian Center for International Relations",
+        image: require("../images/speakers/image18.png"),
+        bio: RafaelaGuedesBio,
+    },
+    {
         name: "Dr. KUAT AKIZHANOV",
         position: "Deputy director, CAREC Institute",
         image: require("../images/speakers/image8.png"),
@@ -65,12 +71,14 @@ export const speakersData: Speaker[] = [
         position: "Chairperson of the Cambridge Central Asia Forum of the Cambridge University, Director of Cambridge Kazakhstan Centre",
         image: require("../images/speakers/image9.png"),
         bio: SiddharthSaxenaBio,
+        style:{objectFit:'cover'}
     },
     {
         name: "Dr. GHULAM SAMAD",
         position: "Head of the Research Division, CAREC Institute",
         image: require("../images/speakers/image10.png"),
         bio: GhulamSamadBio,
+        style:{paddingTop:'10px'}
     },
     {
         name: "Dr. JOACHIM MONKELBAAN",
@@ -85,46 +93,45 @@ export const speakersData: Speaker[] = [
         bio: RashadHuseynovBio,
     },
     {
-        name: "Amar Bhattacharya",
+        name: "MARGHERITA BIANCHI ",
+        position: "Head of the Energy, Climate & Resources Programme",
+        image: require("../images/speakers/image19.png"),
+        bio: MargheritaBianchiBio,
+    },
+    {
+        name: "AMAR BHATTACHARYA",
         position: "Senior Fellow, Brookings Institution",
         image: require("../images/speakers/image13.png"),
         bio: AmarBhattacharyaBio,
     },
     {
-        name: "Bambang Brodjonegoro",
-        position: "Former Finance Minister, Indonesia",
-        image: require("../images/speakers/image14.png"),
-        bio: BambangBrodjonegoroBio,
-    },
-    {
-        name: "Adil Najam",
+        name: "ADIL NAJAM",
         position: "Dean Emeritus; Professor of International Relations and Earth & Environment",
         image: require("../images/speakers/image15.png"),
         bio: AdilNajamBio,
         style: { objectFit: 'cover', paddingTop: '5px' }
     },
+
+];
+
+export const guestsData: Speaker[] = [
     {
-        name: "Izabella Teixeira",
+        name: "BAMBANG BRODJONEGORO",
+        position: "Former Finance Minister, Indonesia",
+        image: require("../images/speakers/image14.png"),
+        bio: BambangBrodjonegoroBio,
+    },
+    {
+        name: "IZABELLA TEIXEIRA",
         position: "Co-chair, UNEP International Resource Panel; Former Brazilian Environment Minister",
         image: require("../images/speakers/image16.png"),
         bio: IzabellaTeixeiraBio,
     },
     {
-        name: "Shinobu Yamaguchi",
+        name: "SHINOBU YAMAGUCHI",
         position: "Director, United Nations University Institute for the Advanced Study of Sustainability",
         image: require("../images/speakers/image17.png"),
         bio: ShinobuYamaguchiBio,
     },
-    {
-        name: "Rafaela Guedes – Brazil",
-        position: "Senior fellow, Brazilian Center for International Relations",
-        image: require("../images/speakers/image18.png"),
-        bio: RafaelaGuedesBio,
-    },
-    {
-        name: "Margherita Bianchi",
-        position: "Head of the Energy, Climate & Resources Programme",
-        image: require("../images/speakers/image19.png"),
-        bio: MargheritaBianchiBio,
-    },
+
 ];

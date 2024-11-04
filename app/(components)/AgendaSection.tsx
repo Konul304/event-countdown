@@ -17,6 +17,7 @@ import image15 from "../images/speakers/image15.png";
 import image18 from "../images/speakers/image18.png";
 import image19 from "../images/speakers/image19.png";
 import image14 from "../images/speakers/image14.png";
+import image20 from "../images/speakers/image20.png";
 import Image from 'next/image';
 
 const AgendaSection = ({
@@ -53,11 +54,16 @@ const AgendaSection = ({
                     </div>
                 </div>
                 <hr />
-                <div className={styles.agenda_flex}>
+                <div className={styles.agenda_flex} style={{ gap: '0px', paddingLeft: '79px' }}>
                     <div className={styles.time}>
                     </div>
                     <div className={styles.info_header} style={{ marginTop: '20px' }}>
-                        Event Moderator : <span>KAORI HITOMI <br />Media and Partnership Consultant, ADBI</span>
+                        <div className={styles.info_content}>
+                            <Image className={styles.image} src={image20} width={39} height={39} alt='speaker' onClick={onImageClick} />
+                            <div className={styles.info_header} style={{ marginLeft: '0px' }}>
+                                Event Moderator : <span>KAORI HITOMI <br />Media and Partnership Consultant, ADBI</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div style={{ marginTop: '25px' }} className={styles.agenda_flex}>
@@ -136,7 +142,7 @@ const AgendaSection = ({
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginBottom: '17px' }}>
-                            <Image className={styles.image} src={image4} width={39} height={39} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image4} width={47} height={42} alt='speaker' onClick={onImageClick} />
                             <div>
                                 <span className={styles.session_chair}>Session chair: </span><span>NICOLAS J.A. BUCHOUD<br />Senior Advisor to the Dean and CEO, Asian
                                     Development Bank Institute</span>
@@ -169,8 +175,8 @@ const AgendaSection = ({
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
                             <Image className={styles.image} src={image18} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
-                                Dr RAFAELA GUEDES<br />
-                                Senior Fellow, Brazilian Center for International relations
+                                Dr. RAFAELA GUEDES<br />
+                                Senior Fellow, Brazilian Center for International Relations
                             </div>
                         </div>
                     </div>
@@ -182,15 +188,7 @@ const AgendaSection = ({
                         Q&A and moderated discussion
                     </div>
                 </div>
-                <hr />
-                <div className={styles.agenda_flex} style={{ marginTop: '17px' }}>
-                    <div className={styles.time}>
-                        11:00 - 11:30<br />(30 min)
-                    </div>
-                    <div className={styles.info_header} style={{ marginLeft: '0px' }}>
-                        Break
-                    </div>
-                </div>
+
             </div>
             <div className={styles.agenda_content} style={{ marginTop: '72px', borderRadius: '20px', paddingTop: '0px', paddingBottom: '210px' }}>
                 <div className={styles.top_part} style={{ padding: '0 77.77px' }}>
@@ -202,7 +200,7 @@ const AgendaSection = ({
                         11:15 - 11:30
                     </div>
                     <div className={styles.info_header} style={{ marginLeft: '0px' }}>
-                        Short Coﬀee Break
+                        Coﬀee Break
                     </div>
                 </div>
                 <div className={styles.content_footer}>
@@ -224,8 +222,8 @@ const AgendaSection = ({
 
                         </div>
                         <div className={styles.info_content} style={{ marginBottom: '17px' }}>
-                            <Image className={styles.image} src={image8} width={39} height={39} alt='speaker' onClick={onImageClick} />
-                            <div>
+                            <Image className={styles.image} src={image8} width={48} height={42} alt='speaker' onClick={onImageClick} />
+                            <div >
                                 <span className={styles.session_chair}>Session chair: </span><span>Dr. KUAT AKIZHANOV, Deputy director, CAREC
                                     Institute</span>
                             </div>
@@ -234,8 +232,8 @@ const AgendaSection = ({
                             Opening insights
                         </div>
                         <div className={styles.info_content}>
-                            <Image className={styles.image} src={image9} width={39} height={39} alt='speaker' onClick={onImageClick} />
-                            <div>
+                            <Image className={styles.image} src={image9} width={78} height={40} alt='speaker' onClick={onImageClick} />
+                            <div >
                                 Prof. Dr. SIDDHARTH SAXENA <br />
                                 Chairperson of the Cambridge Central Asia Forum of the
                                 Cambridge University, Director of Cambridge Kazakhstan

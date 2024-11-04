@@ -116,13 +116,18 @@
                 font-weight: 700;
                 line-height: 23.61px;
                 color: rgba(0, 97, 107, 1);
+
+                span {
+                    font-family: Gotham Book !important;
+
+                }
             }
 
             .info_content {
                 display: flex;
                 gap: 16.7px;
                 margin-top: 8.46px;
-                font-family: Gotham Thin;
+                font-family: Gotham Book;
                 font-size: 19.73px;
                 font-weight: 400;
                 line-height: 23.67px;
