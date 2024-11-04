@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { AdilNajamBio, AmarBhattacharyaBio, BambangBrodjonegoroBio, BulatYessekinBio, CandiceMcDeiganBio, FakhriJHasanovBio, GhulamSamadBio, IzabellaTeixeiraBio, JoachimMonkelbaanBio, KuatAkizhanovBio, MargheritaBianchiBio, NicolasBuchoudBio, RafaelaGuedesBio, RashadHuseynovBio, ShenXiaomengBio, ShinobuYamaguchiBio, SiddharthSaxenaBio, TetsushiSonobeBio, VusalGasimliBio } from "../data/bio";
+import { AdilNajamBio, AmarBhattacharyaBio, BambangBrodjonegoroBio, BulatYessekinBio, CandiceMcDeiganBio, DinaAzghaliyevaBio, FakhriJHasanovBio, GhulamSamadBio, IzabellaTeixeiraBio, JoachimMonkelbaanBio, KuatAkizhanovBio, MargheritaBianchiBio, NicolasBuchoudBio, RafaelaGuedesBio, RashadHuseynovBio, ShenXiaomengBio, ShinobuYamaguchiBio, SiddharthSaxenaBio, TetsushiSonobeBio, VusalGasimliBio } from "../data/bio";
 
 interface Speaker {
     name: string;
@@ -85,6 +85,12 @@ export const speakersData: Speaker[] = [
         position: "Senior Fellow, KAPSARC",
         image: require("../images/speakers/image11.png"),
         bio: JoachimMonkelbaanBio,
+    },
+    {
+        name: "Dr. DINA AZHGALIYEVA",
+        position: "Senior Economist (Climate Change), ADB",
+        image: require("../images/speakers/image21.png"),
+        bio: DinaAzghaliyevaBio,
     },
     {
         name: "Dr. RASHAD HUSEYNOV",
