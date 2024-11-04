@@ -36,6 +36,9 @@ const TetsushiSonobeBio = (
             Tetsushi Sonobe is the Dean and CEO of the Asian Development Bank Institute (ADBI), the Tokyo-based think tank of the Asian Development Bank that promotes the realization of a prosperous, inclusive, resilient, and sustainable Asia and the Pacific through policy research and capacity building.
             Dean Sonobe obtained his PhD in economics from Yale University and BA in economics from the University of Tokyo. His research interests are centered on the roles of economic agglomeration, human and social capital, management practices, and market competition in economic development, climate action, and global governance.
             Before joining ADBI in April 2020, Dean Sonobe served as the vice president of the National Graduate Institute for Policy Studies (GRIPS), a public policy school in Tokyo, and taught economics for thirty years at Tokyo Metropolitan University and GRIPS. In 2023, he served as the chair of Think7, the think tank engagement group of G7 Japan.  He is also recipient of the Nikkei Book Publication Prize and the Masayoshi Ohira Memorial Prize, and the vice president of the Japanese Association for Development Economics (JADE).
+            <br />
+            <br />
+            <a href="sonobete@grips.ac.jp" target="_blank">sonobete@grips.ac.jp</a>
         </p>
     </div>
 );
@@ -50,7 +53,8 @@ const CandiceMcDeiganBio = (
                 Country Director, ADB
             </div>
             Ms. Candice Patrice McDeigan is the Country Director for the Azerbaijan Republic Resident Mission in ADB’s Central and West Asia Department. She is a qualified lawyer and a country director with over 20 years of diverse international private and development experience
-            <br /><br /><a target="_blank" href=".https://www.linkedin.com/in/nicolasbuchoud/?originalSubdomain=jp">.https://www.linkedin.com/in/nicolasbuchoud/?originalSubdomain=jp</a>
+            <br /><br />
+            {/* <a target="_blank" href=".https://www.linkedin.com/in/nicolasbuchoud/?originalSubdomain=jp">.https://www.linkedin.com/in/nicolasbuchoud/?originalSubdomain=jp</a> */}
         </p>
     </div>
 );
