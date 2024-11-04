@@ -111,12 +111,12 @@ const AgendaSection = ({
                         <div className={styles.info_content}>
                             <Image className={styles.image} src={image14} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
-                                Prof. BAMBANG BRODJONEGORO <br />
+                                Prof. Dr. BAMBANG BRODJONEGORO <br />
                                 Special Advisor to the President of the Republic of Indonesia
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
-                            <Image className={styles.image} src={image4} width={37} height={37} alt='speaker' onClick={onImageClick} />
+                            <Image className={styles.image} src={image4} width={47} height={42} alt='speaker' onClick={onImageClick} />
                             <div>
                                 NICOLAS J.A. BUCHOUD<br />
                                 Senior Advisor to the Dean and CEO, Asian Development Bank
@@ -293,14 +293,14 @@ const AgendaSection = ({
                         <div className={styles.info_content}>
                             <Image className={styles.image} src={image13} width={39} height={39} alt='speaker' onClick={onImageClick} />
                             <div>
-                                Dr AMAR BHATTACHARYA<br />
+                                Prof. Dr. AMAR BHATTACHARYA<br />
                                 Senior Fellow, Brookings Institutions
                             </div>
                         </div>
                         <div className={styles.info_content} style={{ marginTop: '23px' }}>
                             <Image className={styles.image} src={image15} width={37} height={37} alt='speaker' onClick={onImageClick} />
                             <div>
-                                Dr ADIL NAJAM<br />
+                                Prof. Dr. ADIL NAJAM<br />
                                 President of WWF International
                             </div>
                         </div>

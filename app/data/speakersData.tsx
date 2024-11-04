@@ -71,14 +71,14 @@ export const speakersData: Speaker[] = [
         position: "Chairperson of the Cambridge Central Asia Forum of the Cambridge University, Director of Cambridge Kazakhstan Centre",
         image: require("../images/speakers/image9.png"),
         bio: SiddharthSaxenaBio,
-        style:{objectFit:'cover'}
+        style: { objectFit: 'cover' }
     },
     {
         name: "Dr. GHULAM SAMAD",
         position: "Head of the Research Division, CAREC Institute",
         image: require("../images/speakers/image10.png"),
         bio: GhulamSamadBio,
-        style:{paddingTop:'10px'}
+        style: { paddingTop: '10px' }
     },
     {
         name: "Dr. JOACHIM MONKELBAAN",
@@ -99,13 +99,13 @@ export const speakersData: Speaker[] = [
         bio: MargheritaBianchiBio,
     },
     {
-        name: "AMAR BHATTACHARYA",
+        name: "Prof. Dr. AMAR BHATTACHARYA",
         position: "Senior Fellow, Brookings Institution",
         image: require("../images/speakers/image13.png"),
         bio: AmarBhattacharyaBio,
     },
     {
-        name: "ADIL NAJAM",
+        name: "Prof. Dr. ADIL NAJAM",
         position: "Dean Emeritus; Professor of International Relations and Earth & Environment",
         image: require("../images/speakers/image15.png"),
         bio: AdilNajamBio,
@@ -116,7 +116,7 @@ export const speakersData: Speaker[] = [
 
 export const guestsData: Speaker[] = [
     {
-        name: "BAMBANG BRODJONEGORO",
+        name: "Prof. Dr. BAMBANG BRODJONEGORO",
         position: "Former Finance Minister, Indonesia",
         image: require("../images/speakers/image14.png"),
         bio: BambangBrodjonegoroBio,
