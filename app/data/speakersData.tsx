@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { AdilNajamBio, AmarBhattacharyaBio, BambangBrodjonegoroBio, BulatYessekinBio, CandiceMcDeiganBio, DinaAzghaliyevaBio, FakhriJHasanovBio, GhulamSamadBio, IzabellaTeixeiraBio, JoachimMonkelbaanBio, KuatAkizhanovBio, MargheritaBianchiBio, NicolasBuchoudBio, RafaelaGuedesBio, RashadHuseynovBio, ShenXiaomengBio, ShinobuYamaguchiBio, SiddharthSaxenaBio, TetsushiSonobeBio, VusalGasimliBio } from "../data/bio";
+import { AbdulAbiadBio, AdilNajamBio, AlexBenkensteinBio, AmarBhattacharyaBio, BambangBrodjonegoroBio, BulatYessekinBio, CandiceMcDeiganBio, DinaAzghaliyevaBio, FakhriJHasanovBio, GhulamSamadBio, IzabellaTeixeiraBio, JoachimMonkelbaanBio, KuatAkizhanovBio, MargheritaBianchiBio, NicolasBuchoudBio, RafaelaGuedesBio, RashadHuseynovBio, ShenXiaomengBio, ShinobuYamaguchiBio, SiddharthSaxenaBio, SunniyaDurraniJamalBio, TetsushiSonobeBio, VladislavZavadskiyBio, VusalGasimliBio } from "../data/bio";
 
 interface Speaker {
     name: string;
@@ -27,11 +27,32 @@ export const speakersData: Speaker[] = [
         link: "sonobete@grips.ac.jp"
     },
     {
-        name: "CANDICE McDEIGAN",
-        position: "Head of the Asian Development Bank's Resident Mission in Azerbaijan (TBC)",
-        image: require("../images/speakers/image3.png"),
-        bio: CandiceMcDeiganBio,
-        style: { objectFit: 'cover', paddingTop: '10px' },
+        name: "SUNNIYA DURRANI-JAMAL",
+        position: "Country Director for the Asian Development Bank in Azerbaijan",
+        image: require("../images/speakers/image22.png"),
+        bio: SunniyaDurraniJamalBio,
+        link: "https://www.linkedin.com/in/sunniya-durrani/?originalSubdomain=ph"
+    },
+    {
+        name: "Dr. ABDUL ABIAD",
+        position: "Director of the Macroeconomic Research Division, Asian Development Bank",
+        image: require("../images/speakers/image23.png"),
+        bio: AbdulAbiadBio,
+        link: "https://www.linkedin.com/in/abdul-abiad/?originalSubdomain=ph"
+    },
+    // {
+    //     name: "CANDICE McDEIGAN",
+    //     position: "Head of the Asian Development Bank's Resident Mission in Azerbaijan (TBC)",
+    //     image: require("../images/speakers/image3.png"),
+    //     bio: CandiceMcDeiganBio,
+    //     style: { objectFit: 'cover', paddingTop: '10px' },
+    // },
+    {
+        name: "Prof. Dr. BAMBANG BRODJONEGORO",
+        position: "Former Finance Minister, Indonesia",
+        image: require("../images/speakers/image14.png"),
+        bio: BambangBrodjonegoroBio,
+        link: 'office@bambangbrodjonegoro.com'
     },
     {
         name: "NICOLAS J.A. BUCHOUD",
@@ -55,18 +76,32 @@ export const speakersData: Speaker[] = [
         link: 'https://www.linkedin.com/in/bulat-yessekin-8925792a/?originalSubdomain=kz'
     },
     {
-        name: "Dr. FAKHRI J. HASANOV",
-        position: "Senior Principal Fellow, KAPSARC",
-        image: require("../images/speakers/image7.png"),
-        bio: FakhriJHasanovBio,
-        link: 'hasanov.fakhri@gmail.com'
-    },
-    {
         name: "RAFAELA GUEDES",
         position: "Senior fellow, Brazilian Center for International Relations",
         image: require("../images/speakers/image18.png"),
         bio: RafaelaGuedesBio,
         link: 'rafaelammonnerat@gmail.comyamaguchi@unu.edu'
+    },
+    {
+        name: "Dr. VLADISLAV ZAVADSKIY",
+        position: "Senior Energy Expert, CAREC Institute",
+        image: require("../images/speakers/image24.png"),
+        bio: VladislavZavadskiyBio,
+        link: 'https://www.linkedin.com/in/vladislav-zavadskiy-9bba4937/?originalSubdomain=kz'
+    },
+    {
+        name: "MARGHERITA BIANCHI ",
+        position: "Head of the Energy, Climate & Resources Programme",
+        image: require("../images/speakers/image19.png"),
+        bio: MargheritaBianchiBio,
+        link: 'm.bianchi@iai.it'
+    },
+    {
+        name: "ALEX BENKENSTEIN",
+        position: "Programme Head at South African Institute of International Affairs (SAIIA)",
+        image: require("../images/speakers/image25.png"),
+        bio: AlexBenkensteinBio,
+        link: 'https://www.linkedin.com/in/alex-benkenstein-8489994b/'
     },
     {
         name: "Dr. KUAT AKIZHANOV",
@@ -82,6 +117,20 @@ export const speakersData: Speaker[] = [
         bio: SiddharthSaxenaBio,
         style: { objectFit: 'cover' },
         link: 'https://www.linkedin.com/in/siddharthsaxenacambridge/?originalSubdomain=uk'
+    },
+    {
+        name: "SHINOBU YAMAGUCHI",
+        position: "Director, United Nations University Institute for the Advanced Study of Sustainability",
+        image: require("../images/speakers/image17.png"),
+        bio: ShinobuYamaguchiBio,
+        link: 'h.ishijima@unu.edu'
+    },
+    {
+        name: "Dr. FAKHRI J. HASANOV",
+        position: "Senior Principal Fellow, KAPSARC",
+        image: require("../images/speakers/image7.png"),
+        bio: FakhriJHasanovBio,
+        link: 'hasanov.fakhri@gmail.com'
     },
     {
         name: "Dr. GHULAM SAMAD",
@@ -112,13 +161,13 @@ export const speakersData: Speaker[] = [
         bio: RashadHuseynovBio,
         link: 'https://www.linkedin.com/in/rashad-huseynov-phd-720ab3a/?originalSubdomain=az'
     },
-    {
-        name: "MARGHERITA BIANCHI ",
-        position: "Head of the Energy, Climate & Resources Programme",
-        image: require("../images/speakers/image19.png"),
-        bio: MargheritaBianchiBio,
-        link: 'm.bianchi@iai.it'
-    },
+    // {
+    //     name: "MARGHERITA BIANCHI ",
+    //     position: "Head of the Energy, Climate & Resources Programme",
+    //     image: require("../images/speakers/image19.png"),
+    //     bio: MargheritaBianchiBio,
+    //     link: 'm.bianchi@iai.it'
+    // },
     {
         name: "Prof. Dr. AMAR BHATTACHARYA",
         position: "Senior Fellow, Brookings Institution",
@@ -127,24 +176,25 @@ export const speakersData: Speaker[] = [
         link: 'ABhattacharya@brookings.edu'
     },
     {
-        name: "Prof. Dr. ADIL NAJAM",
-        position: "Dean Emeritus; Professor of International Relations and Earth & Environment",
-        image: require("../images/speakers/image15.png"),
-        bio: AdilNajamBio,
-        style: { objectFit: 'cover', paddingTop: '5px' },
-        link: 'anajam@bu.edu'
+        name: "IZABELLA TEIXEIRA",
+        position: "Co-chair, UNEP International Resource Panel; Former Brazilian Environment Minister",
+        image: require("../images/speakers/image16.png"),
+        bio: IzabellaTeixeiraBio,
+        link: 'izabella.monica@gmail.com'
     },
+    // {
+    //     name: "Prof. Dr. ADIL NAJAM",
+    //     position: "Dean Emeritus; Professor of International Relations and Earth & Environment",
+    //     image: require("../images/speakers/image15.png"),
+    //     bio: AdilNajamBio,
+    //     style: { objectFit: 'cover', paddingTop: '5px' },
+    //     link: 'anajam@bu.edu'
+    // },
 
 ];
 
 export const guestsData: Speaker[] = [
-    {
-        name: "Prof. Dr. BAMBANG BRODJONEGORO",
-        position: "Former Finance Minister, Indonesia",
-        image: require("../images/speakers/image14.png"),
-        bio: BambangBrodjonegoroBio,
-        link: 'office@bambangbrodjonegoro.com'
-    },
+
     {
         name: "IZABELLA TEIXEIRA",
         position: "Co-chair, UNEP International Resource Panel; Former Brazilian Environment Minister",
@@ -152,12 +202,6 @@ export const guestsData: Speaker[] = [
         bio: IzabellaTeixeiraBio,
         link: 'izabella.monica@gmail.com'
     },
-    {
-        name: "SHINOBU YAMAGUCHI",
-        position: "Director, United Nations University Institute for the Advanced Study of Sustainability",
-        image: require("../images/speakers/image17.png"),
-        bio: ShinobuYamaguchiBio,
-        link: 'h.ishijima@unu.edu'
-    },
+
 
 ];

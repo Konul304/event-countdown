@@ -103,7 +103,7 @@ const KuatAkizhanovBio = (
     <div className={styles.popover}>
         <p className={styles.popover_content}>
             <div className={styles.name}>
-                Dr. KUAT AKIZHANOV
+                Dr. Kuat Akizhanov
             </div>
             <div className={styles.position}>
                 Deputy director, CAREC Institute
@@ -135,12 +135,11 @@ const NicolasBuchoudBio = (
     </div>
 )
 
-
 const GhulamSamadBio = (
     <div className={styles.popover}>
         <p className={styles.popover_content}>
             <div className={styles.name}>
-                Dr. GHULAM SAMAD
+                Dr. Ghulam Samad
             </div>
             <div className={styles.position}>
                 Head of the Research Division, CAREC Institute
@@ -175,7 +174,8 @@ const SiddharthSaxenaBio = (
     <div className={styles.popover}>
         <p className={styles.popover_content}>
             <div className={styles.name}>
-                Prof. Dr. SIDDHARTH SAXENA            </div>
+                Prof. Dr. Siddharth Saxena
+            </div>
             <div className={styles.position}>
                 Chairperson of the Cambridge Central Asia Forum of the Cambridge University, Director of Cambridge Kazakhstan Centre
             </div>
@@ -195,7 +195,7 @@ const JoachimMonkelbaanBio = (
     <div className={styles.popover}>
         <p className={styles.popover_content}>
             <div className={styles.name}>
-                Dr. JOACHIM MONKELBAAN
+                Dr. Joachim Monkelbaan
             </div>
             <div className={styles.position}>
                 Senior Fellow, KAPSARC
@@ -333,7 +333,7 @@ const RafaelaGuedesBio = (
     <div className={styles.popover}>
         <p className={styles.popover_content}>
             <div className={styles.name}>
-                Shinobu Yamaguchi
+                Rafaela Guedes
             </div>
             <div className={styles.position}>
                 Senior fellow, Brazilian Center for International Relations
@@ -352,7 +352,7 @@ const MargheritaBianchiBio = (
     <div className={styles.popover}>
         <p className={styles.popover_content}>
             <div className={styles.name}>
-                MARGHERITA BIANCHI
+                Margherita Bianchi
             </div>
             <div className={styles.position}>
                 Head of the Energy, Climate & Resources Programme
@@ -391,6 +391,83 @@ const DinaAzghaliyevaBio = (
     </div>
 );
 
+const VladislavZavadskiyBio = (
+    <div className={styles.popover}>
+        <p className={styles.popover_content}>
+            <div className={styles.name}>
+                Dr. Vladislav Zavadskiy
+            </div>
+            <div className={styles.position}>
+                PhD, MSc, Senior energy expert at the CAREC Institute, Urumqi, PRC
+            </div>
+            Vladislav has more than seventeen years of research, applied and managerial experience in the field of energy, renewable energy, water utilization and water technologies,  electricity storage systems, future fuels and hydrogen, electricity and power markets, integration of electric power systems and markets, electricity tariff policy, analysis of the assets of energy-producing organizations, transmission, distribution infrastructure, grid facilities, mining, geochemistry, analytical and laboratory business; academic teaching and research.
+            Dr. Zavadskiy was an expert of the Ministry of Energy of the Republic of Kazakhstan, worked on consulting and analytical projects related to green energy, infrastructure and energy saving; was an editor of the analytical reports on energy of the UN division REN21, lead educational and research projects supported by the European Union,  inter-university cooperation projects, was the deputy editor-in-chief of the journal "Vestnik AUPET"; has numerous peer-review publications in internationally recognized journals, participated and organized international conferences, congresses and workshops.
+            Within the CAREC Institute Vladislav is leading Energy related projects, supporting such activities as the Visiting Fellows Program, Research Conferences, workshop and seminar events.
+            In July 2024 Dr. Zavadskiy was appointed as Secretary of the CAREC Institute Publishing Board.
+            <br />
+            <br />
+            <a target="_blank" href="https://www.linkedin.com/in/vladislav-zavadskiy-9bba4937/?originalSubdomain=kz">https://www.linkedin.com/in/vladislav-zavadskiy-9bba4937/?originalSubdomain=kz
+            </a>
+        </p>
+    </div>
+);
+
+const SunniyaDurraniJamalBio = (
+    <div className={styles.popover}>
+        <p className={styles.popover_content}>
+            <div className={styles.name}>
+                Sunniya Durrani-Jamal
+            </div>
+            <div className={styles.position}>
+                Country Director for the Asian Development Bank in Azerbaijan
+            </div>
+            Ms. Durrani-Jamal has more than 25 years’ professional experience, including 16 years with ADB where she has held key senior roles. These include country director for Cambodia, senior advisor to ADB’s vice president for east Asia, southeast Asia, and the pacific; and senior economist.
+            Ms. Durrani-Jamal holds a master’s degree in economics (human development) from the University of Sussex, United Kingdom, and a master of science in economics (monetary policy) from Quaid-i-Azam University, Pakistan. She succeeds outgoing Country Director Candice McDeigan who held this position from 2021.
+            Since Azerbaijan joined the bank in 1999, ADB has committed more than $5 billion in sovereign and private sector assistance, including in transport, energy, health care, and agriculture.
+            ADB is committed to achieving a prosperous, inclusive, resilient, and sustainable Asia and the Pacific, while sustaining its efforts to eradicate extreme poverty. Established in 1966, it is owned by 69 members—49 from the region. <br />
+            <br />
+            <a target="_blank" href="https://www.linkedin.com/in/sunniya-durrani/?originalSubdomain=ph">https://www.linkedin.com/in/sunniya-durrani/?originalSubdomain=ph
+            </a>
+        </p>
+    </div>
+);
+
+const AbdulAbiadBio = (
+    <div className={styles.popover}>
+        <p className={styles.popover_content}>
+            <div className={styles.name}>
+                Abdul Abiad
+            </div>
+            <div className={styles.position}>
+                Director of the Macroeconomic Research Division, Asian Development Bank
+            </div>
+            Abdul Abiad is Director of the Macroeconomic Research Division at the Asian Development Bank in Manila, where he oversees the ADB’s flagship publication, the Asian Development Outlook. From 2000 to 2015, he was with the International Monetary Fund in Washington DC, where he worked on the World Economic Outlook. His research has focused on financial sector development and international financial integration, fiscal policy, exchange rates and trade, economic resilience, and infrastructure. A Philippine national, he has a BS in Mathematics from the University of the Philippines and a Ph.D. in Economics from the University of Pennsylvania. <br />
+            <br />
+            <br />
+            <a target="_blank" href="https://www.linkedin.com/in/abdul-abiad/?originalSubdomain=ph">https://www.linkedin.com/in/abdul-abiad/?originalSubdomain=ph
+            </a>
+        </p>
+    </div>
+);
+
+const AlexBenkensteinBio = (
+    <div className={styles.popover}>
+        <p className={styles.popover_content}>
+            <div className={styles.name}>
+                Alex Benkenstein
+            </div>
+            <div className={styles.position}>
+                Programme Head at South African Institute of International Affairs (SAIIA)
+            </div>
+            Alex Benkenstein is a senior researcher with the South African Institute of International Affairs (SAIIA), where he forms part of the institute’s Governance of Africa’s Resources Programme. His work has focused on resource governance and development in Africa, focusing in particular on the mining and fisheries sectors. His most recent research topic has been the governance of bulk seabed mining in Southern Africa. Previously Alex has worked as a consultant for various public and private sector clients, including the Parliament of South Africa, and was head of research for the nonprofit organization Regency Foundation Networx.
+            <br />
+            <br />
+            <a target="_blank" href="https://www.linkedin.com/in/alex-benkenstein-8489994b/">https://www.linkedin.com/in/alex-benkenstein-8489994b/
+            </a>
+        </p>
+    </div>
+);
+
 
 
 export {
@@ -413,5 +490,9 @@ export {
     ShinobuYamaguchiBio,
     RafaelaGuedesBio,
     DinaAzghaliyevaBio,
-    MargheritaBianchiBio
+    MargheritaBianchiBio,
+    VladislavZavadskiyBio,
+    SunniyaDurraniJamalBio,
+    AbdulAbiadBio,
+    AlexBenkensteinBio
 };

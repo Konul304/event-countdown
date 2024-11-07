@@ -25,7 +25,7 @@ const SpeakersSection = () => (
                 </Popover>
             ))}
         </div>
-        <div className={styles.speakers_header} style={{ marginTop: '5%' }}>Guests</div>
+        {/* <div className={styles.speakers_header} style={{ marginTop: '5%' }}>Guests</div>
         <div className={styles.speakers}>
             {guestsData.map((speaker, index) => (
                 <Popover key={index} placement="right" content={speaker.bio}>
@@ -40,7 +40,7 @@ const SpeakersSection = () => (
                     </div>
                 </Popover>
             ))}
-        </div>
+        </div> */}
     </div >
 )
 
