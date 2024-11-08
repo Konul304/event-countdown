@@ -67,7 +67,7 @@ const HomePage = () => {
     const handleDownload = () => {
         console.log('object')
         const link = document.createElement('a');
-        link.href = 'https://drive.google.com/file/d/19Rdn_AB0uWC91vQcKXk_2PtRv8iAEY2E/view?usp=sharing'; // Change this path to the relative path of your PDF file
+        link.href = 'https://drive.google.com/file/d/1au3NMzTzWrXUV4xuJHM77T5BOXmtbUjm/view?usp=sharing'; // Change this path to the relative path of your PDF file
         link.target = '_blank'; // Open in a new tab
         link.rel = 'noopener noreferrer'; // Security measure for opening new tabs
         link.click();
@@ -119,7 +119,7 @@ const HomePage = () => {
                     <CountdownTimer />
                     <p className={styles.date}> November 16 2024, 09:00 AM</p>
                     <p className={styles.title}>Global Green Economy</p>
-                    <p className={styles.description}> Climate Action, Financing and Innovation<br/> Forum</p>
+                    <p className={styles.description}> Climate Action, Financing and Innovation<br /> Forum</p>
                     <div className={styles.buttons_container}>
                         <div className={styles.download_agenda} onClick={handleDownload}>
                             <div>{download}</div>
