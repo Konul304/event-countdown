@@ -421,7 +421,7 @@ const AgendaSection = ({
                         Networking lunch
                     </div>
                 </div>
-                <hr />
+                {/* <hr />
                 <div className={styles.agenda_flex} style={{ marginTop: '37px' }}>
                     <div className={styles.time}>
                         19:00
@@ -429,7 +429,7 @@ const AgendaSection = ({
                     <div className={styles.info_header} style={{ marginLeft: '0px' }}>
                         Networking dinner (will be announced)
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
