@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { AbdulAbiadBio, AdilNajamBio, AlexBenkensteinBio, AmarBhattacharyaBio, BambangBrodjonegoroBio, BulatYessekinBio, CandiceMcDeiganBio, DinaAzghaliyevaBio, FakhriJHasanovBio, GhulamSamadBio, IzabellaTeixeiraBio, JoachimMonkelbaanBio, KuatAkizhanovBio, MargheritaBianchiBio, NicolasBuchoudBio, RafaelaGuedesBio, RashadHuseynovBio, ShenXiaomengBio, ShinobuYamaguchiBio, SiddharthSaxenaBio, SunniyaDurraniJamalBio, TetsushiSonobeBio, VladislavZavadskiyBio, VusalGasimliBio } from "../data/bio";
+import { AbdulAbiadBio, AdilNajamBio, AlexBenkensteinBio, AmarBhattacharyaBio, BambangBrodjonegoroBio, BulatYessekinBio, CandiceMcDeiganBio, DinaAzghaliyevaBio, FakhriJHasanovBio, GhulamSamadBio, IzabellaTeixeiraBio, JoachimMonkelbaanBio, KaoriHitomiBio, KuatAkizhanovBio, MargheritaBianchiBio, NicolasBuchoudBio, PhilipOsanoBio, RafaelaGuedesBio, RashadHuseynovBio, ShenXiaomengBio, ShinobuYamaguchiBio, SiddharthSaxenaBio, SunniyaDurraniJamalBio, TeresaRossiBio, TetsushiSonobeBio, VladislavZavadskiyBio, VusalGasimliBio } from "../data/bio";
 
 interface Speaker {
     name: string;
@@ -33,13 +33,6 @@ export const speakersData: Speaker[] = [
         bio: SunniyaDurraniJamalBio,
         link: "https://www.linkedin.com/in/sunniya-durrani/?originalSubdomain=ph"
     },
-    {
-        name: "Dr. ABDUL ABIAD",
-        position: "Director of the Macroeconomic Research Division, Asian Development Bank",
-        image: require("../images/speakers/image23.png"),
-        bio: AbdulAbiadBio,
-        link: "https://www.linkedin.com/in/abdul-abiad/?originalSubdomain=ph"
-    },
     // {
     //     name: "CANDICE McDEIGAN",
     //     position: "Head of the Asian Development Bank's Resident Mission in Azerbaijan (TBC)",
@@ -62,11 +55,25 @@ export const speakersData: Speaker[] = [
         link: 'https://www.linkedin.com/in/nicolasbuchoud/?originalSubdomain=jp'
     },
     {
+        name: "Dr. AMAR BHATTACHARYA",
+        position: "Senior Fellow, Brookings Institution",
+        image: require("../images/speakers/image13.png"),
+        bio: AmarBhattacharyaBio,
+        link: 'ABhattacharya@brookings.edu'
+    },
+    {
         name: "Dr. SHEN XIAOMENG",
         position: "UN University - Institute for Environment and Human Security",
         image: require("../images/speakers/image5.png"),
         bio: ShenXiaomengBio,
         link: 'https://www.linkedin.com/in/shenxiaomeng/?originalSubdomain=de'
+    },
+    {
+        name: "Dr. PHILIP OSANO",
+        position: "Director of Stockholm Environment Institute, Africa (TBC)",
+        image: require("../images/speakers/image26.png"),
+        bio: PhilipOsanoBio,
+        link: 'https://www.linkedin.com/in/philip-osano-28860a230/?originalSubdomain=ke'
     },
     {
         name: "Dr. BULAT YESSEKIN",
@@ -76,18 +83,18 @@ export const speakersData: Speaker[] = [
         link: 'https://www.linkedin.com/in/bulat-yessekin-8925792a/?originalSubdomain=kz'
     },
     {
-        name: "RAFAELA GUEDES",
-        position: "Senior fellow, Brazilian Center for International Relations",
-        image: require("../images/speakers/image18.png"),
-        bio: RafaelaGuedesBio,
-        link: 'rafaelammonnerat@gmail.comyamaguchi@unu.edu'
+        name: "Dr. KUAT AKIZHANOV",
+        position: "Deputy director, CAREC Institute",
+        image: require("../images/speakers/image8.png"),
+        bio: KuatAkizhanovBio,
+        link: 'https://www.facebook.com/kuat.akizhanov.3/?locale=el_GR'
     },
     {
-        name: "Dr. VLADISLAV ZAVADSKIY",
-        position: "Senior Energy Expert, CAREC Institute",
-        image: require("../images/speakers/image24.png"),
-        bio: VladislavZavadskiyBio,
-        link: 'https://www.linkedin.com/in/vladislav-zavadskiy-9bba4937/?originalSubdomain=kz'
+        name: "Dr. TERESA ROSSI",
+        position: "Deputy Director for partnerships and international cooperation, CEBRI",
+        image: require("../images/speakers/image27.png"),
+        bio: TeresaRossiBio,
+        link: 'https://www.linkedin.com/in/teresa-rossi-37a637150/'
     },
     {
         name: "MARGHERITA BIANCHI ",
@@ -99,16 +106,24 @@ export const speakersData: Speaker[] = [
     {
         name: "ALEX BENKENSTEIN",
         position: "Programme Head at South African Institute of International Affairs (SAIIA)",
-        image: require("../images/speakers/image25.png"),
+        image: require("../images/speakers/image28.png"),
         bio: AlexBenkensteinBio,
-        link: 'https://www.linkedin.com/in/alex-benkenstein-8489994b/'
+        link: 'https://www.linkedin.com/in/alex-benkenstein-8489994b/',
+        style: { paddingTop: '28px' }
     },
+    // {
+    //     name: "RAFAELA GUEDES",
+    //     position: "Senior fellow, Brazilian Center for International Relations",
+    //     image: require("../images/speakers/image18.png"),
+    //     bio: RafaelaGuedesBio,
+    //     link: 'rafaelammonnerat@gmail.comyamaguchi@unu.edu'
+    // },
     {
-        name: "Dr. KUAT AKIZHANOV",
-        position: "Deputy director, CAREC Institute",
-        image: require("../images/speakers/image8.png"),
-        bio: KuatAkizhanovBio,
-        link: 'https://www.facebook.com/kuat.akizhanov.3/?locale=el_GR'
+        name: "Dr. VLADISLAV ZAVADSKIY",
+        position: "Senior Energy Expert, CAREC Institute",
+        image: require("../images/speakers/image24.png"),
+        bio: VladislavZavadskiyBio,
+        link: 'https://www.linkedin.com/in/vladislav-zavadskiy-9bba4937/?originalSubdomain=kz'
     },
     {
         name: "Prof. Dr. SIDDHARTH SAXENA",
@@ -117,13 +132,6 @@ export const speakersData: Speaker[] = [
         bio: SiddharthSaxenaBio,
         style: { objectFit: 'cover' },
         link: 'https://www.linkedin.com/in/siddharthsaxenacambridge/?originalSubdomain=uk'
-    },
-    {
-        name: "SHINOBU YAMAGUCHI",
-        position: "Director, United Nations University Institute for the Advanced Study of Sustainability",
-        image: require("../images/speakers/image17.png"),
-        bio: ShinobuYamaguchiBio,
-        link: 'h.ishijima@unu.edu'
     },
     {
         name: "Dr. FAKHRI J. HASANOV",
@@ -169,18 +177,11 @@ export const speakersData: Speaker[] = [
     //     link: 'm.bianchi@iai.it'
     // },
     {
-        name: "Prof. Dr. AMAR BHATTACHARYA",
-        position: "Senior Fellow, Brookings Institution",
-        image: require("../images/speakers/image13.png"),
-        bio: AmarBhattacharyaBio,
-        link: 'ABhattacharya@brookings.edu'
-    },
-    {
-        name: "IZABELLA TEIXEIRA",
-        position: "Co-chair, UNEP International Resource Panel; Former Brazilian Environment Minister",
-        image: require("../images/speakers/image16.png"),
-        bio: IzabellaTeixeiraBio,
-        link: 'izabella.monica@gmail.com'
+        name: "SHINOBU YAMAGUCHI",
+        position: "Director, United Nations University Institute for the Advanced Study of Sustainability",
+        image: require("../images/speakers/image17.png"),
+        bio: ShinobuYamaguchiBio,
+        link: 'h.ishijima@unu.edu'
     },
     // {
     //     name: "Prof. Dr. ADIL NAJAM",
@@ -190,6 +191,27 @@ export const speakersData: Speaker[] = [
     //     style: { objectFit: 'cover', paddingTop: '5px' },
     //     link: 'anajam@bu.edu'
     // },
+    // {
+    //     name: "IZABELLA TEIXEIRA",
+    //     position: "Co-chair, UNEP International Resource Panel; Former Brazilian Environment Minister",
+    //     image: require("../images/speakers/image16.png"),
+    //     bio: IzabellaTeixeiraBio,
+    //     link: 'izabella.monica@gmail.com'
+    // },
+    {
+        name: "Dr. ABDUL ABIAD",
+        position: "Director of the Macroeconomic Research Division, Asian Development Bank",
+        image: require("../images/speakers/image23.png"),
+        bio: AbdulAbiadBio,
+        link: "https://www.linkedin.com/in/abdul-abiad/?originalSubdomain=ph"
+    },
+    {
+        name: "KAORI HITOMI",
+        position: "Media and Partnership Consultant, Asian Development Bank Institute",
+        image: require("../images/speakers/image20.png"),
+        bio: KaoriHitomiBio,
+        link: "https://www.linkedin.com/in/hitomi-kaori-935b2023/"
+    },
 
 ];
 

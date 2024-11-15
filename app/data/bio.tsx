@@ -459,8 +459,7 @@ const AlexBenkensteinBio = (
             <div className={styles.position}>
                 Programme Head at South African Institute of International Affairs (SAIIA)
             </div>
-            Alex Benkenstein is a senior researcher with the South African Institute of International Affairs (SAIIA), where he forms part of the institute’s Governance of Africa’s Resources Programme. His work has focused on resource governance and development in Africa, focusing in particular on the mining and fisheries sectors. His most recent research topic has been the governance of bulk seabed mining in Southern Africa. Previously Alex has worked as a consultant for various public and private sector clients, including the Parliament of South Africa, and was head of research for the nonprofit organization Regency Foundation Networx.
-            <br />
+            Alex Benkenstein is the Programme Head of the Climate and Natural Resources Programme of the South African Institute of International Affairs (SAIIA). His work in SAIIA has focused on a number of resource governance-related issues, particularly in the fields of climate change / just transition, sustainable blue economy, and extractive industry governance. He has conducted research in several African countries and has strong linkages with key regional institutions such as the African Union Commission and the Southern African Development Community. His work is focused on policy relevant research, policy design and the facilitation of strategic dialogue in furtherance of enhanced governance and resilience at sub-national, national, regional and global levels.            <br />
             <br />
             <a target="_blank" href="https://www.linkedin.com/in/alex-benkenstein-8489994b/">https://www.linkedin.com/in/alex-benkenstein-8489994b/
             </a>
@@ -468,6 +467,63 @@ const AlexBenkensteinBio = (
     </div>
 );
 
+const PhilipOsanoBio = (
+    <div className={styles.popover}>
+        <p className={styles.popover_content}>
+            <div className={styles.name}>
+                Dr. PHILIP OSANO
+            </div>
+            <div className={styles.position}>
+                Director of Stockholm Environment Institute, Africa (TBC)
+            </div>
+            Philip Osano is the Centre Director of SEI Africa. His interest is in environmental policy, development and international affairs.
+
+            He is an environmental policy expert with diverse research on biodiversity and ecosystem governance; land use change; pastoral and rangeland management; climate change adaptation; agricultural policy; water and land management; and integrated environmental planning.
+
+            Philip has 15 years of experience in applied research, project coordination, policy analysis, and teaching and has worked in 12 countries in Africa and in Canada and the United States.  Prior to joining SEI, he was based in Addis Ababa, Ethiopia, as part of a core team supporting the African Union Commission to prepare the 10-year Strategy & Roadmap for the Malabo Declaration on Accelerated Agricultural Growth and Transformation to guide the implementation of the Comprehensive African Agricultural Development Programme for the 2015-2025 decade.
+
+            A Jean Sauvé Fellow in Public Leadership, Philip holds a PhD in Geography from McGill University, Canada, an MSc (Conservation Biology) from the University of Cape Town, South Africa, and a BSc (Environmental Science) from Egerton University in Kenya.            <br />
+            <br />
+            <a target="_blank" href="https://www.linkedin.com/in/philip-osano-28860a230/?originalSubdomain=ke">https://www.linkedin.com/in/philip-osano-28860a230/?originalSubdomain=ke
+            </a>
+        </p>
+    </div>
+);
+
+const TeresaRossiBio = (
+    <div className={styles.popover}>
+        <p className={styles.popover_content}>
+            <div className={styles.name}>
+                Dr. TERESA ROSSI
+            </div>
+            <div className={styles.position}>
+                Deputy Director for partnerships and international cooperation, CEBRI
+            </div>
+            Teresa Rossi is an experienced project manager specializing in environmental issues and international cooperation, with expertise in public policy, corporate engagement, and climate governance. Fluent in English and Spanish, she excels in critical thinking and communication, combining strategic planning with practical implementation to advance social inclusion through environmental initiatives. <br />
+            <br />
+            <br />
+            <a target="_blank" href="https://www.linkedin.com/in/teresa-rossi-37a637150/">https://www.linkedin.com/in/teresa-rossi-37a637150/
+            </a>
+        </p>
+    </div>
+);
+
+const KaoriHitomiBio = (
+    <div className={styles.popover}>
+        <p className={styles.popover_content}>
+            <div className={styles.name}>
+                KAORI HITOMI
+            </div>
+            <div className={styles.position}>
+                Media and Partnership Consultant, ADBI
+            </div>
+            She joined ADBI in 2020 after more than 20 years as a TV journalist and regional editor at the Associated Press. She covered various political, social, and economic news across Asia, and coordinated coverage of summit and ministerial level meetings of fora such as APEC, ASEAN, the G7, and G20. She also managed AP’s editorial for Asia and the Pacific as Asia deputy editor.           <br />
+            <br />
+            <a target="_blank" href="https://www.linkedin.com/in/hitomi-kaori-935b2023/">https://www.linkedin.com/in/hitomi-kaori-935b2023/
+            </a>
+        </p>
+    </div>
+);
 
 
 export {
@@ -494,5 +550,8 @@ export {
     VladislavZavadskiyBio,
     SunniyaDurraniJamalBio,
     AbdulAbiadBio,
-    AlexBenkensteinBio
+    AlexBenkensteinBio,
+    PhilipOsanoBio,
+    TeresaRossiBio,
+    KaoriHitomiBio
 };
