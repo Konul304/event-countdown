@@ -109,7 +109,7 @@ export const speakersData: Speaker[] = [
         image: require("../images/speakers/image28.png"),
         bio: AlexBenkensteinBio,
         link: 'https://www.linkedin.com/in/alex-benkenstein-8489994b/',
-        style: { paddingTop: '28px' }
+        style: { paddingTop: '23%' }
     },
     // {
     //     name: "RAFAELA GUEDES",
