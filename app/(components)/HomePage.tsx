@@ -119,7 +119,7 @@ const HomePage = () => {
                     <CountdownTimer />
                     <p className={styles.date}> November 16 2024, 09:00 AM</p>
                     <p className={styles.title}>Global Green Economy</p>
-                    <p className={styles.description}> Climate Action, Financing and Innovation<br /> Forum</p>
+                    <p className={styles.description}> Climate Action, Financing and Innovation <br/>Forum</p>
                     <div className={styles.buttons_container}>
                         <div className={styles.download_agenda} onClick={handleDownload}>
                             <div>{download}</div>
