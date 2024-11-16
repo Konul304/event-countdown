@@ -291,7 +291,7 @@ const AgendaSection = ({
                                 <span className={styles.session_chair}>Session chair: </span><span> Dr. VLADISLAV ZAVADSKIY<br /> Senior Energy Expert, CAREC Institute</span>
                             </div>
                         </div>
-                        <div className={styles.info_header}>
+                        <div className={styles.info_header} style={{marginTop:'28px'}}>
                             Opening insights
                         </div>
                         <div className={styles.info_content}>
@@ -310,13 +310,13 @@ const AgendaSection = ({
                                 Senior Principal Fellow, KAPSARC
                             </div>
                         </div>
-                        <div className={styles.info_content} >
+                        {/* <div className={styles.info_content} >
                             <Image className={styles.image} src={image10} width={50} height={52} alt='speaker' onClick={onImageClick} />
                             <div>
                                 Dr. GHULAM SAMAD <br />
                                 Head of the Research Division, CAREC Institute
                             </div>
-                        </div>
+                        </div> */}
                         <div className={styles.info_content} >
                             <Image className={styles.image} src={image11} width={50} height={52} alt='speaker' onClick={onImageClick} />
                             <div>
