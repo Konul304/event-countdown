@@ -140,14 +140,14 @@ export const speakersData: Speaker[] = [
         bio: FakhriJHasanovBio,
         link: 'hasanov.fakhri@gmail.com'
     },
-    {
-        name: "Dr. GHULAM SAMAD",
-        position: "Head of the Research Division, CAREC Institute",
-        image: require("../images/speakers/image10.png"),
-        bio: GhulamSamadBio,
-        style: { paddingTop: '10px' },
-        link: 'https://www.linkedin.com/in/ghulam-samad-20b556a5/'
-    },
+    // {
+    //     name: "Dr. GHULAM SAMAD",
+    //     position: "Head of the Research Division, CAREC Institute",
+    //     image: require("../images/speakers/image10.png"),
+    //     bio: GhulamSamadBio,
+    //     style: { paddingTop: '10px' },
+    //     link: 'https://www.linkedin.com/in/ghulam-samad-20b556a5/'
+    // },
     {
         name: "Dr. JOACHIM MONKELBAAN",
         position: "Senior Fellow, KAPSARC",

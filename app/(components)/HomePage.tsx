@@ -67,7 +67,7 @@ const HomePage = () => {
     const handleDownload = () => {
         console.log('object')
         const link = document.createElement('a');
-        link.href = 'https://drive.google.com/file/d/1XhuhBRXcjdbfKM3eAL59RWgMyR6w5W6t/view?usp=sharing'; // Change this path to the relative path of your PDF file
+        link.href = 'https://drive.google.com/file/d/1qJPhOnBr6XR0d5pAqqkEQDycn3jboM-u/view?usp=sharing'; // Change this path to the relative path of your PDF file
         link.target = '_blank'; // Open in a new tab
         link.rel = 'noopener noreferrer'; // Security measure for opening new tabs
         link.click();
