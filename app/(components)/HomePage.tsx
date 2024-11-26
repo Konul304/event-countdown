@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import CountdownTimer from './Countdown'
 import styles from "../styles/HomePage.module.scss"
-import { adb, adb_institute, carec_logo, download, gerb } from "../images/icons"
+import { adb, adb_institute, carec_logo, download, gerb } from "../../public/images/icons"
 import ContentSection from './ContentSection';
 import AgendaSection from './AgendaSection';
 import SpeakersSection from './SpeakersSection';
@@ -45,7 +45,11 @@ const HomePage = () => {
                 behavior: 'smooth'
             });
         }
-    };
+        else {
+            window.open('/media', '_blank')
+
+        };
+    }
 
     const handleScroll = () => {
         const scrollY = window.scrollY;
@@ -105,6 +109,7 @@ const HomePage = () => {
                             <li className={activeSection === 'section1' ? styles.active : ''} onClick={() => handleNavClick('section1')}>About</li>
                             <li className={activeSection === 'section3' ? styles.active : ''} onClick={() => handleNavClick('section3')}>Speakers</li>
                             <li className={activeSection === 'section2' ? styles.active : ''} onClick={() => handleNavClick('section2')}>Agenda</li>
+                            <li onClick={() => handleNavClick('section4')}>Media</li>
                         </ul>
                     )}
                     {isBurgerMenuOpen && (
@@ -112,6 +117,7 @@ const HomePage = () => {
                             <li onClick={() => handleNavClick('section1')}>About</li>
                             <li onClick={() => handleNavClick('section3')}>Speakers</li>
                             <li onClick={() => handleNavClick('section2')}>Agenda</li>
+                            <li onClick={() => handleNavClick('section4')}>Media</li>
                         </ul>
                     )}
                 </nav>
@@ -119,7 +125,7 @@ const HomePage = () => {
                     <CountdownTimer />
                     <p className={styles.date}> November 16 2024, 09:00 AM</p>
                     <p className={styles.title}>Global Green Economy</p>
-                    <p className={styles.description}> Climate Action, Financing and Innovation <br/>Forum</p>
+                    <p className={styles.description}> Climate Action, Financing and Innovation <br />Forum</p>
                     <div className={styles.buttons_container}>
                         <div className={styles.download_agenda} onClick={handleDownload}>
                             <div>{download}</div>

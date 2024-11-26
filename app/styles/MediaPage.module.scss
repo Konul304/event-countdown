@@ -1,0 +1,113 @@
+.header_container {
+    height: 80px;
+    background: #F3F4F6;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+
+    .items {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 22px;
+
+        .section {
+            color: rgba(60, 60, 67, 0.60);
+            text-align: center;
+            font-family: Gotham;
+            font-size: 20.18px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+            padding: 0 10px;
+
+            &:hover {
+                color: #0F356D;
+            }
+
+            &.active {
+                color: #0F356D;
+                ;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0px;
+                    width: 93px;
+                    height: 2px;
+                    background-color: #0F356D;
+                }
+            }
+        }
+
+    }
+
+}
+
+.content {
+    padding: 50px 105px;
+
+    .title {
+        color: rgba(33, 78, 128, 0.70);
+        font-family: Gotham;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        margin-bottom: 40px;
+    }
+
+    .photos_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .photos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 100%;
+            margin-bottom: 52px;
+            gap: 20px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .load_more {
+            display: flex;
+            width: 211px;
+            height: 53px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            background: transparent;
+            border: 1px solid #0f356d;
+            color: #0f356d;
+            font-family: Gotham;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-bottom: 52px;
+            transition: 0.3s;
+
+            &:hover {
+                background: #f5f7f9;
+                color: #0f356d;
+                box-shadow: 0px 4px 4px 0px rgba(15, 53, 109, 0.25);
+            }
+
+            &:active {
+                background: #0f356d;
+                color: #fff;
+                box-shadow: 0px 4px 4px 0px rgba(15, 53, 109, 0.25);
+            }
+        }
+    }
+
+
+}

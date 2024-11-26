@@ -38,11 +38,12 @@ html {
   weight: 500;
 }
 
+/* 
 .ant-modal .ant-modal-content {
   height: 803px !important;
   border-radius: 32px !important;
-  /* margin-top: -90px !important; */
-}
+   margin-top: -90px !important;
+ } */
 
 .ant-input-outlined {
   width: 478px !important;
@@ -143,7 +144,8 @@ html {
   font-size: 9.76px !important;
   font-style: normal !important;
   font-weight: 500 !important;
-  line-height: 150% !important; /* 14.64px */
+  line-height: 150% !important;
+  /* 14.64px */
   letter-spacing: -0.107px !important;
 }
 
@@ -164,6 +166,23 @@ html {
 .ant-collapse .ant-collapse-item:last-child>.ant-collapse-content {
   border-top: none !important;
 
+}
+
+.ant-modal-content {
+  padding: 0px !important;
+  border-radius: 10px !important;
+}
+
+.ant-modal {
+  border-radius: 10px !important;
+}
+
+.ant-btn{
+  padding: 25px !important;
+  border: none !important;
+  background-color:#10356D !important;
+  margin: 10px !important;
+  color: #fff !important;
 }
 
 @media only screen and (max-width: 900px) {

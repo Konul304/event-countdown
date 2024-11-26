@@ -299,6 +299,24 @@ const download = (
     </svg>
 );
 
+const back = (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M18 7L13 12L18 17M11 7L6 12L11 17" stroke="#0F356D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+)
+
+const previous = (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M18 7L13 12L18 17M11 7L6 12L11 17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+)
+
+const next = (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M6 17L11 12L6 7M13 17L18 12L13 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+)
+
 
 export {
     carec_logo,
@@ -312,5 +330,8 @@ export {
     mini_map,
     minus,
     plus,
-    download
+    download,
+    back,
+    previous,
+    next
 };

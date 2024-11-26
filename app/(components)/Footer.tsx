@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../styles/Footer.module.scss";
-import { mini_map } from '../images/icons';
+import { mini_map } from '../../public/images/icons';
 
 const Footer = () => {
     return (
