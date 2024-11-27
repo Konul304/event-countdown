@@ -1,12 +1,14 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import styles from "../styles/MediaPage.module.scss";
-import { back, next, previous } from '../../public/images/icons';
+import { back, download_img, media_icon, next, play_icon, previous } from '../../public/images/icons';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import img from "../../public/images/default.png"
 import { photos } from "../data/mediaPhotos"
 import { Button, Modal } from 'antd';
+import { news } from '../data/newsData';
+import { videos } from '../data/mediaVideos';
 
 const MediaPage = () => {
     const router = useRouter();
@@ -94,9 +96,6 @@ const MediaPage = () => {
     }, []);
 
 
-    const videos = Array(20).fill(img);
-    const news = Array(20).fill(img);
-
     useEffect(() => {
         const handleScrollEvent = () => {
             if (typeof window !== "undefined") {
@@ -152,7 +151,7 @@ const MediaPage = () => {
                                             src={photo.src}
                                             width={photo.width}
                                             height={photo.height}
-                                            style={{ objectFit: 'cover', border: '1px solid #d9d0d0' }}
+                                            style={{ objectFit: 'cover', border: '1px solid #d9d0d0', cursor: 'pointer' }}
                                             alt="photo"
                                         />
                                     );
@@ -169,8 +168,38 @@ const MediaPage = () => {
                     <div className={styles.title}>News</div>
                     <div className={styles.photos_container}>
                         <div className={styles.photos}>
-                            {news.slice(0, visibleNews).map((news, index) => (
-                                <Image key={index} src={news} width={300} height={237} alt="photo" />
+                            {news?.slice(0, visibleNews).map((news) => (
+                                <div className={styles.card}>
+                                    <Image
+                                        src={news?.imgsrc}
+                                        // src={img}
+                                        alt="Card cover"
+                                        width={296}
+                                        height={182}
+                                    />
+                                    <div className={styles.card_content}>
+                                        <div>
+                                            <div className={styles.card_title}>
+                                                {news?.title}
+                                            </div>
+                                            <div className={styles.card_description}>
+                                                {news?.description}
+                                            </div>
+
+                                        </div>
+                                        <div className={styles.card_footer} >
+                                            <div
+                                                style={{ display: 'flex', gap: '3px', alignItems: 'center' }}
+                                            >
+                                                <div className={styles.footer_icon}>{media_icon}</div>
+                                                <span className={styles.card_date}>{news?.source}</span>
+                                            </div>
+                                            <button className={styles.more_button} onClick={() => window.open(news?.link, '_blank')}>
+                                                Read more
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             ))}
                         </div>
                         {visibleNews < news.length && (
@@ -185,7 +214,11 @@ const MediaPage = () => {
                     <div className={styles.photos_container}>
                         <div className={styles.photos}>
                             {videos.slice(0, visibleVideos).map((video, index) => (
-                                <Image key={index} src={video} width={300} height={237} alt="photo" />
+                                <div >
+                                    <div onClick={() => window.open(video?.link, '_blank')} style={{ cursor: 'pointer' }} className={styles.play_icon}>{play_icon}</div>
+                                    <Image onClick={() => window.open(video?.link, '_blank')} style={{ width: '305px', height: '166px', cursor: 'pointer' }} key={index} src={video?.imgSrc} width={300} height={237} alt="photo" />
+                                    <div className={styles.video_title}>{video?.title}</div>
+                                </div>
                             ))}
                         </div>
                         {visibleVideos < videos.length && (
@@ -205,14 +238,27 @@ const MediaPage = () => {
                 height={photos[modalImageIndex ? modalImageIndex : 0].height + 400}
             >
                 {modalImageIndex !== null && (
-                    <div>
+                    <div >
                         <Image
                             src={photos[modalImageIndex].src}
                             alt="Modal Photo"
                             width={photos[modalImageIndex ? modalImageIndex : 0].width + 700}
                             height={photos[modalImageIndex ? modalImageIndex : 0].height + 400}
-                            style={{ borderTopRightRadius: '10px', borderTopLeftRadius: '10px', objectFit: 'cover' }}
+                            style={{ position: 'relative', borderTopRightRadius: '10px', borderTopLeftRadius: '10px', objectFit: 'cover' }}
                         />
+                        <Button
+                            style={{ position: 'absolute', right: '54px', top: '-6px' }}
+                            onClick={() => {
+                                const link = document.createElement('a');
+                                link.href = photos[modalImageIndex!].src;
+                                link.download = `photo-${modalImageIndex! + 1}.jpg`; // You can customize the file name
+                                document.body.appendChild(link);
+                                link.click();
+                                document.body.removeChild(link);
+                            }}
+                        >
+                            {download_img}
+                        </Button>
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
                             <Button onClick={handlePreviousImage}>{previous}</Button>
                             <Button onClick={handleNextImage}>{next}</Button>

@@ -177,12 +177,23 @@ html {
   border-radius: 10px !important;
 }
 
-.ant-btn{
+.ant-btn {
   padding: 25px !important;
   border: none !important;
-  background-color:#10356D !important;
+  background-color: #10356D !important;
   margin: 10px !important;
   color: #fff !important;
+}
+
+.ant-modal .ant-modal-close {
+  top: 4px;
+  width: 47px !important;
+  height: 49px !important;
+  background-color: #10356D !important;
+}
+
+.anticon svg {
+  color: white !important;
 }
 
 @media only screen and (max-width: 900px) {
