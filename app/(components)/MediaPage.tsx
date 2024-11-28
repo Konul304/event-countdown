@@ -86,7 +86,6 @@ const MediaPage = () => {
     const handleNextImage = () => {
         setModalImageIndex((prevIndex) => (prevIndex! < photos.length - 1 ? prevIndex! + 1 : 0));
     };
-    console.log(modalImageIndex)
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -165,7 +164,7 @@ const MediaPage = () => {
                                 .map((photo, filteredIndex) => {
                                     const originalIndex = photos.findIndex(p => p.src === photo.src); // Get index from the original array
                                     return (
-                                        <div className='photo'>
+                                        <div className='photo' key={filteredIndex}>
                                             <Image
                                                 onClick={() => handleImageClick(originalIndex)}
                                                 key={filteredIndex}
@@ -190,8 +189,8 @@ const MediaPage = () => {
                     <div className={styles.title}>News</div>
                     <div className={styles.photos_container}>
                         <div className={styles.photos}>
-                            {news?.slice(0, visibleNews).map((news) => (
-                                <div className={styles.card}>
+                            {news?.slice(0, visibleNews).map((news, index) => (
+                                <div className={styles.card} key={index}>
                                     <Image
                                         src={news?.imgsrc}
                                         // src={img}
@@ -236,7 +235,7 @@ const MediaPage = () => {
                     <div className={styles.photos_container}>
                         <div className={styles.photos}>
                             {videos.slice(0, visibleVideos).map((video, index) => (
-                                <div >
+                                <div key={index}>
                                     <div onClick={() => window.open(video?.link, '_blank')} style={{ cursor: 'pointer' }} className={styles.play_icon}>{play_icon}</div>
                                     <Image onClick={() => window.open(video?.link, '_blank')} style={{ width: '305px', height: '166px', cursor: 'pointer' }} key={index} src={video?.imgSrc} width={300} height={237} alt="photo" />
                                     <div className={styles.video_title}>{video?.title}</div>
