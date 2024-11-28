@@ -65,43 +65,48 @@ export const videos = [
         title: 'Professor Vüsal Qasımlının Qlobal Beyin Mərkəzləri Forumunda açılış niqti'
     },
     {
-        link: 'https://www.youtube.com/watch?v=xbd_tBPVdzc',
-        imgSrc: "/images/media/videoCovers/cover14.png",
-        title: 'Baku TV '
+        link: 'https://www.youtube.com/watch?v=2zOZVWfv5Ks&list=PLI78pf-w_abQWoCmcxURQJGnFLhJSwRHu&index=22',
+        imgSrc: "/images/media/videoCovers/cover19.jpeg",
+        title: 'Qlobal Beyin Mərkəzləri Forumu | Kuat Akizhanov | CAREC Institute'
     },
-    {
-        link: 'https://www.youtube.com/watch?v=2MoLVLDzIEo',
-        imgSrc: "/images/media/videoCovers/cover15.png",
-        title: 'Real TV'
-    },
-    {
-        link: 'https://www.youtube.com/watch?v=gbFFF3WOd8I',
-        imgSrc: "/images/media/photos/photo2.png",
-        title: 'AnewZ TV'
-    },
-    {
-        link: 'https://www.youtube.com/live/KjFWjsWkvpY',
-        imgSrc: "/images/media/videoCovers/cover14.png",
-        title: 'ARB24 TV (12:20-15:49)'
-    },
-    {
-        link: 'https://www.youtube.com/watch?v=2HJSaV-6RiI',
-        imgSrc: "/images/media/videoCovers/cover16.png",
-        title: 'AzTV (19:00-19:54)'
-    },
-    {
-        link: 'https://video.azertag.az/video/233764',
-        imgSrc: "/images/media/videoCovers/cover17.png",
-        title: 'Azertag News Agency | Tetsushi Sonobe'
-    },
-    {
-        link: 'https://video.azertag.az/video/233756',
-        imgSrc: "/images/media/videoCovers/cover14.png",
-        title: 'Azertag News Agency | Ayaz Museyibov '
-    },
-    {
-        link: 'https://youtu.be/3c5ibu4zLKI',
-        imgSrc: "/images/media/videoCovers/cover18.png",
-        title: 'Space TV'
-    },
+    // {
+    //     link: 'https://www.youtube.com/watch?v=xbd_tBPVdzc',
+    //     imgSrc: "/images/media/videoCovers/cover14.png",
+    //     title: 'Baku TV '
+    // },
+    // {
+    //     link: 'https://www.youtube.com/watch?v=2MoLVLDzIEo',
+    //     imgSrc: "/images/media/videoCovers/cover15.png",
+    //     title: 'Real TV'
+    // },
+    // {
+    //     link: 'https://www.youtube.com/watch?v=gbFFF3WOd8I',
+    //     imgSrc: "/images/media/photos/photo2.png",
+    //     title: 'AnewZ TV'
+    // },
+    // {
+    //     link: 'https://www.youtube.com/live/KjFWjsWkvpY',
+    //     imgSrc: "/images/media/videoCovers/cover14.png",
+    //     title: 'ARB24 TV (12:20-15:49)'
+    // },
+    // {
+    //     link: 'https://www.youtube.com/watch?v=2HJSaV-6RiI',
+    //     imgSrc: "/images/media/videoCovers/cover16.png",
+    //     title: 'AzTV (19:00-19:54)'
+    // },
+    // {
+    //     link: 'https://video.azertag.az/video/233764',
+    //     imgSrc: "/images/media/videoCovers/cover17.png",
+    //     title: 'Azertag News Agency | Tetsushi Sonobe'
+    // },
+    // {
+    //     link: 'https://video.azertag.az/video/233756',
+    //     imgSrc: "/images/media/videoCovers/cover14.png",
+    //     title: 'Azertag News Agency | Ayaz Museyibov '
+    // },
+    // {
+    //     link: 'https://youtu.be/3c5ibu4zLKI',
+    //     imgSrc: "/images/media/videoCovers/cover18.png",
+    //     title: 'Space TV'
+    // },
 ]
