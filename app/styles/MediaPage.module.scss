@@ -43,6 +43,34 @@
 
     }
 
+    .burgerIcon {
+        font-size: 24px;
+        cursor: pointer;
+        display: flex;
+        color: #0F356D;
+    }
+
+    .burgerMenu {
+        display: flex;
+        flex-direction: column;
+        background-color: #304673; // Or desired color
+        position: absolute;
+        padding: 15px;
+        top: 60px; // Adjust as needed
+        right:102px; // Adjust as needed
+        width: 165px; // Adjust as needed
+
+        li {
+            list-style: none;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #555;
+        }
+    }
 }
 
 .content {
@@ -265,5 +293,119 @@
         font-style: normal;
         font-weight: 400;
         line-height: 120%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header_container {
+        justify-content: space-between;
+    }
+
+    .burgerMenu li {
+        list-style: none;
+        color: white;
+        font-family: Gotham;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        /* 21.6px */
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .header_container {
+        padding: 0px 40px !important;
+    }
+
+    .burgerMenu {
+        right: 40px !important;
+    }
+
+    .card {
+        width: 450px !important;
+    }
+
+    .video_title {
+        width: 450px !important;
+    }
+
+    .photos img {
+        width: 450px !important;
+        height: 262px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .card {
+        width: 350px !important;
+        height: 329px !important;
+    }
+
+    .video_title {
+        width: 350px !important;
+    }
+
+    .photos img {
+        width: 350px !important;
+        height: 162px !important;
+    }
+
+    .load_more {
+        width: 155px !important;
+        height: 45px !important;
+        margin-top: 0px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+
+    .card {
+        width: 300px !important;
+        height: 328px !important;
+    }
+
+    .content {
+        padding: 50px 42px !important;
+    }
+
+    .video_title {
+        width: 300px !important;
+    }
+
+    .more_button {
+        width: 90px !important;
+        font-size: 12px !important;
+    }
+
+    .photos img {
+        width: 300px !important;
+        height: 162px !important;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+
+
+    .card {
+        width: 270px !important;
+        height: 328px !important;
+    }
+
+    .content {
+        padding: 50px 42px !important;
+    }
+
+    .video_title {
+        width: 270px !important;
+    }
+
+    .photos img {
+        width: 270px !important;
+        height: 162px !important;
     }
 }

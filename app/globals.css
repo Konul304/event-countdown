@@ -196,12 +196,53 @@ html {
   color: white !important;
 }
 
+
+
+@media only screen and (max-width: 1040px) {
+  .ant-modal-root .ant-modal-centered .ant-modal {
+    width: 850px !important;
+    height: 462px !important;
+
+    img {
+      width: 850px !important;
+      height: 462px !important;
+    }
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .ant-collapse {
     width: 600px !important;
     margin-bottom: 16px !important;
   }
+
+  .ant-modal .ant-modal-close {
+    width: 35px !important;
+    height: 30px !important;
+  }
+
+  .ant-btn {
+    padding: 12px !important;
+    height: 30px !important;
+    right: 44px !important;
+  }
+
+  .prevBtn,
+  .nextBtn {
+    right: 0px !important;
+  }
+
+  .ant-modal-root .ant-modal-centered .ant-modal {
+    width: 650px !important;
+    height: 362px !important;
+
+    img {
+      width: 650px !important;
+      height: 362px !important;
+    }
+  }
 }
+
 
 @media only screen and (max-width: 670px) {
   .ant-collapse {
@@ -211,5 +252,79 @@ html {
 
   .ant-popover {
     display: none;
+  }
+
+  .ant-modal-root .ant-modal-centered .ant-modal {
+    width: 450px !important;
+    height: 262px !important;
+
+    img {
+      width: 450px !important;
+      height: 262px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .ant-modal-root .ant-modal-centered .ant-modal {
+    width: 350px !important;
+    height: 162px !important;
+
+    img {
+      width: 350px !important;
+      height: 162px !important;
+    }
+  }
+
+  .ant-modal .ant-modal-close {
+    width:25px !important;
+    height: 25px !important;
+  }
+
+  .ant-btn {
+    padding: 8px !important;
+    height: 25px !important;
+    right: 30px !important;
+  }
+
+  .prevBtn,
+  .nextBtn {
+    right: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .ant-modal-root .ant-modal-centered .ant-modal {
+    width: 330px !important;
+    height: 162px !important;
+
+    img {
+      width: 330px !important;
+      height: 162px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 346px) {
+  .ant-modal-root .ant-modal-centered .ant-modal {
+    width: 310px !important;
+    height: 162px !important;
+
+    img {
+      width: 310px !important;
+      height: 162px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 346px) {
+  .ant-modal-root .ant-modal-centered .ant-modal {
+    width: 290px !important;
+    height: 162px !important;
+
+    img {
+      width: 290px !important;
+      height: 162px !important;
+    }
   }
 }

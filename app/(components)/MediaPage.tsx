@@ -12,6 +12,8 @@ import { videos } from '../data/mediaVideos';
 
 const MediaPage = () => {
     const router = useRouter();
+    const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const [activeSection, setActiveSection] = useState('photos_section');
     const [visiblePhotos, setVisiblePhotos] = useState(8);
     const [visibleVideos, setVisibleVideos] = useState(8);
@@ -97,6 +99,11 @@ const MediaPage = () => {
 
 
     useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setIsMobile(window.innerWidth <= 900);
+            window.addEventListener('resize', () => setIsMobile(window.innerWidth <= 900));
+            window.addEventListener('scroll', handleScroll);
+        }
         const handleScrollEvent = () => {
             if (typeof window !== "undefined") {
                 handleScroll();
@@ -119,6 +126,7 @@ const MediaPage = () => {
 
         // Cleanup function to remove both event listeners
         return () => {
+            window.removeEventListener('resize', () => setIsMobile(window.innerWidth <= 900));
             window.removeEventListener("scroll", handleScrollEvent);
             window.removeEventListener("keydown", handleKeyPress);
         };
@@ -128,11 +136,23 @@ const MediaPage = () => {
         <>
             <div className={styles.header_container}>
                 <div style={{ marginTop: '5px', marginRight: '15px' }} onClick={() => router.push('/')}>{back}</div>
-                <div className={styles.items}>
-                    <div className={activeSection === 'photos_section' ? `${styles.active} ${styles.section}` : styles.section} onClick={() => handleNavClick('photos_section')} style={{ display: 'flex', alignItems: 'center' }}>Photos</div>
-                    <div className={activeSection === 'news_section' ? `${styles.active} ${styles.section}` : styles.section} onClick={() => handleNavClick('news_section')}>News</div>
-                    <div className={activeSection === 'videos_section' ? `${styles.active} ${styles.section}` : styles.section} onClick={() => handleNavClick('videos_section')}>Videos</div>
-                </div>
+                {isMobile ? (
+                    <div className={styles.burgerIcon} onClick={() => setIsBurgerMenuOpen(!isBurgerMenuOpen)}>
+                        &#9776; {/* Burger icon */}
+                    </div>
+                ) : (
+                    <div className={styles.items}>
+                        <div className={activeSection === 'photos_section' ? `${styles.active} ${styles.section}` : styles.section} onClick={() => handleNavClick('photos_section')} style={{ display: 'flex', alignItems: 'center' }}>Photos</div>
+                        <div className={activeSection === 'news_section' ? `${styles.active} ${styles.section}` : styles.section} onClick={() => handleNavClick('news_section')}>News</div>
+                        <div className={activeSection === 'videos_section' ? `${styles.active} ${styles.section}` : styles.section} onClick={() => handleNavClick('videos_section')}>Videos</div>
+                    </div>)}
+                {isBurgerMenuOpen && (
+                    <ul className={styles.burgerMenu}>
+                        <li onClick={() => handleNavClick('photos_section')}>Photos</li>
+                        <li onClick={() => handleNavClick('news_section')}>News</li>
+                        <li onClick={() => handleNavClick('videos_section')}>Videos</li>
+                    </ul>
+                )}
             </div >
             <div className={styles.content}>
                 <div ref={photosRef}>
@@ -145,15 +165,17 @@ const MediaPage = () => {
                                 .map((photo, filteredIndex) => {
                                     const originalIndex = photos.findIndex(p => p.src === photo.src); // Get index from the original array
                                     return (
-                                        <Image
-                                            onClick={() => handleImageClick(originalIndex)}
-                                            key={filteredIndex}
-                                            src={photo.src}
-                                            width={photo.width}
-                                            height={photo.height}
-                                            style={{ objectFit: 'cover', border: '1px solid #d9d0d0', cursor: 'pointer' }}
-                                            alt="photo"
-                                        />
+                                        <div className='photo'>
+                                            <Image
+                                                onClick={() => handleImageClick(originalIndex)}
+                                                key={filteredIndex}
+                                                src={photo.src}
+                                                width={photo.width}
+                                                height={photo.height}
+                                                style={{ objectFit: 'cover', border: '1px solid #d9d0d0', cursor: 'pointer' }}
+                                                alt="photo"
+                                            />
+                                        </div>
                                     );
                                 })}
                         </div>
@@ -260,8 +282,8 @@ const MediaPage = () => {
                             {download_img}
                         </Button>
                         <div style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button onClick={handlePreviousImage}>{previous}</Button>
-                            <Button onClick={handleNextImage}>{next}</Button>
+                            <Button className='prevBtn' onClick={handlePreviousImage}>{previous}</Button>
+                            <Button className='nextBtn' onClick={handleNextImage}>{next}</Button>
                         </div>
                     </div>
                 )}
