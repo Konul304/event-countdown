@@ -132,4 +132,11 @@ export const news = [
         source: "yeniazerbaycan",
         link: 'https://www.yeniazerbaycan.com/Iqtisadiyyat_e112678_az.html',
     },
+    {
+        imgsrc: "/images/media/photos/photo9.png",
+        title: "CEBRI participates in a panel on climate action at the Global Think Tank Forum during COP29",
+        description: 'Teresa Rossi, Deputy Director of Partnerships and International Cooperation at CEBRI, took part in the Global Think Tanks Forum at the round table "Global Green Economy: Financing, Innovation, and Climate Action, "',
+        source: "cebri.org",
+        link: 'https://www.yeniazerbaycan.com/Iqtisadiyyat_e112678_az.html',
+    },
 ]
