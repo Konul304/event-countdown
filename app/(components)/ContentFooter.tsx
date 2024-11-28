@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../styles/ContentSection.module.scss"
-import { calendar_icon, location_icon, onsite } from '../images/icons'
+import { calendar_icon, location_icon, onsite } from '../../public/images/icons'
 
 const ContentFooter = () => {
     return (

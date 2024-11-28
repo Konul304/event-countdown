@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "../styles/SpeakersSection.module.scss"
 import Image from 'next/image';
 import { Popover } from 'antd';
-import { guestsData, speakersData } from '../data/speakersData';
+import {  speakersData } from '../data/speakersData';
 
 const speakers = speakersData
 

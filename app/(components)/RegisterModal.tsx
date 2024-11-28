@@ -1,7 +1,7 @@
 import { Button, Checkbox, Form, FormProps, Input, Modal } from 'antd'
 import React from 'react';
 import styles from "../styles/RegisterModal.module.scss";
-import { company_icon, email_icon } from '../images/icons';
+import { company_icon, email_icon } from '../../public/images/icons';
 
 const RegisterModal = ({ isOpen, setIsOpen }: any) => {
 

@@ -1,32 +1,26 @@
 import React from 'react';
 import styles from "../styles/AgendaSection.module.scss";
-import image3 from "../images/speakers/image3.png";
-import image1 from "../images/speakers/image1.png";
-import image2 from "../images/speakers/image2.png";
-import image4 from "../images/speakers/image4.png";
-import image5 from "../images/speakers/image5.png";
-import image6 from "../images/speakers/image6.png";
-import image7 from "../images/speakers/image7.png";
-import image8 from "../images/speakers/image8.png";
-import image9 from "../images/speakers/image9.png";
-import image10 from "../images/speakers/image10.png";
-import image11 from "../images/speakers/image11.png";
-import image12 from "../images/speakers/image12.png";
-import image13 from "../images/speakers/image13.png";
-import image17 from "../images/speakers/image17.png";
-import image16 from "../images/speakers/image16.png";
-import image18 from "../images/speakers/image18.png";
-import image19 from "../images/speakers/image19.png";
-import image14 from "../images/speakers/image14.png";
-import image20 from "../images/speakers/image20.png";
-import image21 from "../images/speakers/image21.png";
-import image22 from "../images/speakers/image22.png";
-import image23 from "../images/speakers/image23.png";
-import image24 from "../images/speakers/image24.png";
-import image25 from "../images/speakers/image25.png";
-import image26 from "../images/speakers/image26.png";
-import image27 from "../images/speakers/image27.png";
-import image28 from "../images/speakers/image28.png";
+import image1 from "../../public/images/speakers/image1.png";
+import image2 from "../../public/images/speakers/image2.png";
+import image4 from "../../public/images/speakers/image4.png";
+import image5 from "../../public/images/speakers/image5.png";
+import image6 from "../../public/images/speakers/image6.png";
+import image7 from "../../public/images/speakers/image7.png";
+import image8 from "../../public/images/speakers/image8.png";
+import image9 from "../../public/images/speakers/image9.png";
+import image11 from "../../public/images/speakers/image11.png";
+import image12 from "../../public/images/speakers/image12.png";
+import image13 from "../../public/images/speakers/image13.png";
+import image17 from "../../public/images/speakers/image17.png";
+import image19 from "../../public/images/speakers/image19.png";
+import image14 from "../../public/images/speakers/image14.png";
+import image20 from "../../public/images/speakers/image20.png";
+import image21 from "../../public/images/speakers/image21.png";
+import image22 from "../../public/images/speakers/image22.png";
+import image24 from "../../public/images/speakers/image24.png";
+import image26 from "../../public/images/speakers/image26.png";
+import image27 from "../../public/images/speakers/image27.png";
+import image28 from "../../public/images/speakers/image28.png";
 import Image from 'next/image';
 
 const AgendaSection = ({
@@ -291,7 +285,7 @@ const AgendaSection = ({
                                 <span className={styles.session_chair}>Session chair: </span><span> Dr. VLADISLAV ZAVADSKIY<br /> Senior Energy Expert, CAREC Institute</span>
                             </div>
                         </div>
-                        <div className={styles.info_header} style={{marginTop:'28px'}}>
+                        <div className={styles.info_header} style={{ marginTop: '28px' }}>
                             Opening insights
                         </div>
                         <div className={styles.info_content}>

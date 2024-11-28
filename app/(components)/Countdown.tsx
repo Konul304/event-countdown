@@ -14,7 +14,7 @@ const CountdownTimer = () => {
 
                 if (newTimeRemaining <= 0) {
                     clearInterval(timerInterval);
-                    console.log('Countdown complete!');
+                    // console.log('Countdown complete!');
                     return 0;
                 } else {
                     return newTimeRemaining;

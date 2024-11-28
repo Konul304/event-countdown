@@ -1,7 +1,7 @@
 import { Collapse } from 'antd'
 import { CollapseProps } from 'antd/es/collapse/Collapse';
 import { SettingOutlined } from '@ant-design/icons';
-import { minus, plus } from '../images/icons';
+import { minus, plus } from '../../public/images/icons';
 import styles from "../styles/ContentSection.module.scss";
 import ContentFooter from './ContentFooter';
 
