@@ -154,37 +154,6 @@ const MediaPage = () => {
                 )}
             </div >
             <div className={styles.content}>
-                <div ref={photosRef}>
-                    <div className={styles.title}>Photos</div>
-                    <div className={styles.photos_container}>
-                        <div className={styles.photos}>
-                            {photos
-                                .filter(photo => !photo.hidden)
-                                .slice(0, visiblePhotos)
-                                .map((photo, filteredIndex) => {
-                                    const originalIndex = photos.findIndex(p => p.src === photo.src); // Get index from the original array
-                                    return (
-                                        <div className='photo' key={filteredIndex}>
-                                            <Image
-                                                onClick={() => handleImageClick(originalIndex)}
-                                                key={filteredIndex}
-                                                src={photo.src}
-                                                width={photo.width}
-                                                height={photo.height}
-                                                style={{ objectFit: 'cover', border: '1px solid #d9d0d0', cursor: 'pointer' }}
-                                                alt="photo"
-                                            />
-                                        </div>
-                                    );
-                                })}
-                        </div>
-                        {visiblePhotos < photos.length && (
-                            <div className={styles.load_more} onClick={handleLoadMorePhotos}>
-                                Load more
-                            </div>
-                        )}
-                    </div>
-                </div>
                 <div className={styles.news_container} ref={newsRef}>
                     <div className={styles.title}>News</div>
                     <div className={styles.photos_container}>
@@ -230,6 +199,37 @@ const MediaPage = () => {
                         )}
                     </div>
                 </div>
+                <div ref={photosRef}>
+                    <div className={styles.title}>Photos</div>
+                    <div className={styles.photos_container}>
+                        <div className={styles.photos}>
+                            {photos
+                                .filter(photo => !photo.hidden)
+                                .slice(0, visiblePhotos)
+                                .map((photo, filteredIndex) => {
+                                    const originalIndex = photos.findIndex(p => p.src === photo.src); // Get index from the original array
+                                    return (
+                                        <div className='photo' key={filteredIndex}>
+                                            <Image
+                                                onClick={() => handleImageClick(originalIndex)}
+                                                key={filteredIndex}
+                                                src={photo.src}
+                                                width={photo.width}
+                                                height={photo.height}
+                                                style={{ objectFit: 'cover', border: '1px solid #d9d0d0', cursor: 'pointer' }}
+                                                alt="photo"
+                                            />
+                                        </div>
+                                    );
+                                })}
+                        </div>
+                        {visiblePhotos < photos.length && (
+                            <div className={styles.load_more} onClick={handleLoadMorePhotos}>
+                                Load more
+                            </div>
+                        )}
+                    </div>
+                </div>
                 <div className={styles.videos_container} ref={videosRef}>
                     <div className={styles.title}>Videos</div>
                     <div className={styles.photos_container}>
@@ -249,6 +249,7 @@ const MediaPage = () => {
                         )}
                     </div>
                 </div>
+
             </div>
             <Modal
                 open={modalImageIndex !== null}
