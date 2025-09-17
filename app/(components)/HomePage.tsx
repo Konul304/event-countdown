@@ -130,11 +130,11 @@ const HomePage = () => {
                             <div>{download}</div>
                             <div>Agenda</div>
                         </div>
-                        <button className={styles.register_button}
+                        {/* <button className={styles.register_button}
                             onClick={() =>
                                 window.open('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link', '_blank')
                             }
-                        >Register</button>
+                        >Register</button> */}
                     </div>
                     <div className={styles.companies} ref={section1Ref}>
                         <div className={styles.logo1}>{adb_institute}</div>
@@ -158,13 +158,13 @@ const HomePage = () => {
                     <div className={styles.section2}>
                         <AgendaSection refProp={section2Ref} onImageClick={() => handleNavClick('section3')} />
                     </div>
-                    <div className={styles.button_container} >
+                    {/* <div className={styles.button_container} >
                         <button className={styles.secondButton}
                             onClick={() =>
                                 window.open('https://docs.google.com/forms/d/e/1FAIpQLSf5AfCrNYW4ZmmqqhUPiH3HOfBQC6U7hWYFm4-fcUCu038lhw/viewform?usp=sf_link', '_blank')
                             }
                         >Register</button>
-                    </div>
+                    </div> */}
                     <div ref={section3Ref} id="section3" className={styles.section3}>
                         <SpeakersSection />
                         <Footer />

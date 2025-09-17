@@ -31,28 +31,28 @@ const CountdownTimer = () => {
         return Math.max(0, Math.floor(difference / 1000)); // Convert to seconds, ensure it's not negative
     }
 
-    const days = Math.floor(timeRemaining / 86400); // 86400 seconds in a day
-    const hours = Math.floor((timeRemaining % 86400) / 3600);
-    const minutes = Math.floor((timeRemaining % 3600) / 60);
-    const seconds = timeRemaining % 60;
+    // const days = Math.floor(timeRemaining / 86400); // 86400 seconds in a day
+    // const hours = Math.floor((timeRemaining % 86400) / 3600);
+    // const minutes = Math.floor((timeRemaining % 3600) / 60);
+    // const seconds = timeRemaining % 60;
 
     return (
         <div>
             <div className={styles.countdown_container}>
                 <div className={styles.item}>
-                    <div>{days}</div>
+                    <div>0</div>
                     <p>Day</p>
                 </div>
                 <div className={styles.item}>
-                    <div>{hours}</div>
+                    <div>0</div>
                     <p>Hour</p>
                 </div>
                 <div className={styles.item}>
-                    <div>{minutes}</div>
+                    <div>0</div>
                     <p>Minute</p>
                 </div>
                 <div className={styles.item}>
-                    <div>{seconds}</div>
+                    <div>0</div>
                     <p>Second</p>
                 </div>
             </div>
